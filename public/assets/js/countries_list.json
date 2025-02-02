@@ -1,0 +1,785 @@
+{
+    "countries": [
+      {
+        "country": "Afghanistan",
+        "target_capital": "Islamabad, Pakistan"
+      },
+      {
+        "country": "Albania",
+        "target_capital": "Rome, Italy"
+      },
+      {
+        "country": "Algeria",
+        "target_capital": "Paris, France"
+      },
+      {
+        "country": "Andorra",
+        "target_capital": "Madrid, Spain"
+      },
+      {
+        "country": "Angola",
+        "target_capital": "Lisbon, Portugal"
+      },
+      {
+        "country": "Antigua and Barbuda",
+        "target_capital": "Washington, D.C., United States"
+      },
+      {
+        "country": "Argentina",
+        "target_capital": "Asunción, Paraguay"
+      },
+      {
+        "country": "Armenia",
+        "target_capital": "Moscow, Russia"
+      },
+      {
+        "country": "Australia",
+        "target_capital": "London, United Kingdom"
+      },
+      {
+        "country": "Austria",
+        "target_capital": "Berlin, Germany"
+      },
+      {
+        "country": "Azerbaijan",
+        "target_capital": "Ankara, Turkey"
+      },
+      {
+        "country": "Bahamas",
+        "target_capital": "Washington, D.C., United States"
+      },
+      {
+        "country": "Bahrain",
+        "target_capital": "Dubai, UAE"
+      },
+      {
+        "country": "Bangladesh",
+        "target_capital": "Dubai, UAE"
+      },
+      {
+        "country": "Barbados",
+        "target_capital": "Washington, D.C., United States"
+      },
+      {
+        "country": "Belarus",
+        "target_capital": "Moscow, Russia"
+      },
+      {
+        "country": "Belgium",
+        "target_capital": "Paris, France"
+      },
+      {
+        "country": "Belize",
+        "target_capital": "Washington, D.C., United States"
+      },
+      {
+        "country": "Benin",
+        "target_capital": "Paris, France"
+      },
+      {
+        "country": "Bhutan",
+        "target_capital": "Dubai, UAE"
+      },
+      {
+        "country": "Bolivia",
+        "target_capital": "Buenos Aires, Argentina"
+      },
+      {
+        "country": "Bosnia and Herzegovina",
+        "target_capital": "Berlin, Germany"
+      },
+      {
+        "country": "Botswana",
+        "target_capital": "Pretoria, South Africa"
+      },
+      {
+        "country": "Brazil",
+        "target_capital": "Lisbon, Portugal"
+      },
+      {
+        "country": "Brunei",
+        "target_capital": "Kuala Lumpur, Malaysia"
+      },
+      {
+        "country": "Bulgaria",
+        "target_capital": "Berlin, Germany"
+      },
+      {
+        "country": "Burkina Faso",
+        "target_capital": "Paris, France"
+      },
+      {
+        "country": "Burundi",
+        "target_capital": "Brussels, Belgium"
+      },
+      {
+        "country": "Cabo Verde",
+        "target_capital": "Lisbon, Portugal"
+      },
+      {
+        "country": "Cambodia",
+        "target_capital": "Bangkok, Thailand"
+      },
+      {
+        "country": "Cameroon",
+        "target_capital": "Paris, France"
+      },
+      {
+        "country": "Canada",
+        "target_capital": "Dubai, UAE"
+      },
+      {
+        "country": "Central African Republic",
+        "target_capital": "Paris, France"
+      },
+      {
+        "country": "Chad",
+        "target_capital": "Paris, France"
+      },
+      {
+        "country": "Chile",
+        "target_capital": "Lima, Peru"
+      },
+      {
+        "country": "China",
+        "target_capital": "Seoul, South Korea"
+      },
+      {
+        "country": "Colombia",
+        "target_capital": "Caracas, Venezuela"
+      },
+      {
+        "country": "Comoros",
+        "target_capital": "Paris, France"
+      },
+      {
+        "country": "Republic of the Congo",
+        "target_capital": "Paris, France"
+      },
+      {
+        "country": "Democratic Republic of the Congo",
+        "target_capital": "Brussels, Belgium"
+      },
+      {
+        "country": "Costa Rica",
+        "target_capital": "Managua, Nicaragua"
+      },
+      {
+        "country": "Croatia",
+        "target_capital": "Berlin, Germany"
+      },
+      {
+        "country": "Cuba",
+        "target_capital": "Washington, D.C., United States"
+      },
+      {
+        "country": "Cyprus",
+        "target_capital": "Athens, Greece"
+      },
+      {
+        "country": "Czech Republic",
+        "target_capital": "Bratislava, Slovakia"
+      },
+      {
+        "country": "Denmark",
+        "target_capital": "Stockholm, Sweden"
+      },
+      {
+        "country": "Djibouti",
+        "target_capital": "Paris, France"
+      },
+      {
+        "country": "Dominica",
+        "target_capital": "Washington, D.C., United States"
+      },
+      {
+        "country": "Dominican Republic",
+        "target_capital": "Washington, D.C., United States"
+      },
+      {
+        "country": "East Timor",
+        "target_capital": "Lisbon, Portugal"
+      },
+      {
+        "country": "Ecuador",
+        "target_capital": "Bogotá, Colombia"
+      },
+      {
+        "country": "Egypt",
+        "target_capital": "Riyadh, Saudi Arabia"
+      },
+      {
+        "country": "El Salvador",
+        "target_capital": "Washington, D.C., United States"
+      },
+      {
+        "country": "Equatorial Guinea",
+        "target_capital": "Madrid, Spain"
+      },
+      {
+        "country": "Eritrea",
+        "target_capital": "Addis Ababa, Ethiopia"
+      },
+      {
+        "country": "Estonia",
+        "target_capital": "Helsinki, Finland"
+      },
+      {
+        "country": "Eswatini",
+        "target_capital": "Pretoria, South Africa"
+      },
+      {
+        "country": "Ethiopia",
+        "target_capital": "Washington, D.C., United States"
+      },
+      {
+        "country": "Fiji",
+        "target_capital": "Canberra, Australia"
+      },
+      {
+        "country": "Finland",
+        "target_capital": "Stockholm, Sweden"
+      },
+      {
+        "country": "France",
+        "target_capital": "Algiers, Algeria"
+      },
+      {
+        "country": "Gabon",
+        "target_capital": "Paris, France"
+      },
+      {
+        "country": "The Gambia",
+        "target_capital": "London, United Kingdom"
+      },
+      {
+        "country": "Georgia",
+        "target_capital": "Moscow, Russia"
+      },
+      {
+        "country": "Germany",
+        "target_capital": "Ankara, Turkey"
+      },
+      {
+        "country": "Ghana",
+        "target_capital": "London, United Kingdom"
+      },
+      {
+        "country": "Greece",
+        "target_capital": "Tirana, Albania"
+      },
+      {
+        "country": "Grenada",
+        "target_capital": "Washington, D.C., United States"
+      },
+      {
+        "country": "Guatemala",
+        "target_capital": "Washington, D.C., United States"
+      },
+      {
+        "country": "Guinea",
+        "target_capital": "Paris, France"
+      },
+      {
+        "country": "Guinea-Bissau",
+        "target_capital": "Lisbon, Portugal"
+      },
+      {
+        "country": "Guyana",
+        "target_capital": "Washington, D.C., United States"
+      },
+      {
+        "country": "Haiti",
+        "target_capital": "Washington, D.C., United States"
+      },
+      {
+        "country": "Honduras",
+        "target_capital": "Washington, D.C., United States"
+      },
+      {
+        "country": "Hungary",
+        "target_capital": "Berlin, Germany"
+      },
+      {
+        "country": "Iceland",
+        "target_capital": "Copenhagen, Denmark"
+      },
+      {
+        "country": "India",
+        "target_capital": "Washington, D.C., United States"
+      },
+      {
+        "country": "Indonesia",
+        "target_capital": "Kuala Lumpur, Malaysia"
+      },
+      {
+        "country": "Iran",
+        "target_capital": "Abu Dhabi, United Arab Emirates"
+      },
+      {
+        "country": "Iraq",
+        "target_capital": "Amman, Jordan"
+      },
+      {
+        "country": "Ireland",
+        "target_capital": "London, United Kingdom"
+      },
+      {
+        "country": "Israel",
+        "target_capital": "Washington, D.C., United States"
+      },
+      {
+        "country": "Italy",
+        "target_capital": "Bucharest, Romania"
+      },
+      {
+        "country": "Ivory Coast",
+        "target_capital": "Paris, France"
+      },
+      {
+        "country": "Jamaica",
+        "target_capital": "Washington, D.C., United States"
+      },
+      {
+        "country": "Japan",
+        "target_capital": "Washington, D.C., United States"
+      },
+      {
+        "country": "Jordan",
+        "target_capital": "Riyadh, Saudi Arabia"
+      },
+      {
+        "country": "Kazakhstan",
+        "target_capital": "Moscow, Russia"
+      },
+      {
+        "country": "Kenya",
+        "target_capital": "London, United Kingdom"
+      },
+      {
+        "country": "Kiribati",
+        "target_capital": "Canberra, Australia"
+      },
+      {
+        "country": "Kuwait",
+        "target_capital": "Dubai, UAE"
+      },
+      {
+        "country": "Kyrgyzstan",
+        "target_capital": "Moscow, Russia"
+      },
+      {
+        "country": "Laos",
+        "target_capital": "Bangkok, Thailand"
+      },
+      {
+        "country": "Latvia",
+        "target_capital": "London, United Kingdom"
+      },
+      {
+        "country": "Lebanon",
+        "target_capital": "Riyadh, Saudi Arabia"
+      },
+      {
+        "country": "Lesotho",
+        "target_capital": "Pretoria, South Africa"
+      },
+      {
+        "country": "Liberia",
+        "target_capital": "Washington, D.C., United States"
+      },
+      {
+        "country": "Libya",
+        "target_capital": "Tunis, Tunisia"
+      },
+      {
+        "country": "Liechtenstein",
+        "target_capital": "Bern, Switzerland"
+      },
+      {
+        "country": "Lithuania",
+        "target_capital": "London, United Kingdom"
+      },
+      {
+        "country": "Luxembourg",
+        "target_capital": "Paris, France"
+      },
+      {
+        "country": "Madagascar",
+        "target_capital": "Paris, France"
+      },
+      {
+        "country": "Malawi",
+        "target_capital": "Pretoria, South Africa"
+      },
+      {
+        "country": "Malaysia",
+        "target_capital": "Jakarta, Indonesia"
+      },
+      {
+        "country": "Maldives",
+        "target_capital": "Dubai, UAE"
+      },
+      {
+        "country": "Mali",
+        "target_capital": "Paris, France"
+      },
+      {
+        "country": "Malta",
+        "target_capital": "London, United Kingdom"
+      },
+      {
+        "country": "Marshall Islands",
+        "target_capital": "Washington, D.C., United States"
+      },
+      {
+        "country": "Mauritania",
+        "target_capital": "Paris, France"
+      },
+      {
+        "country": "Mauritius",
+        "target_capital": "Paris, France"
+      },
+      {
+        "country": "Mexico",
+        "target_capital": "Washington, D.C., United States"
+      },
+      {
+        "country": "Micronesia",
+        "target_capital": "Washington, D.C., United States"
+      },
+      {
+        "country": "Moldova",
+        "target_capital": "Moscow, Russia"
+      },
+      {
+        "country": "Monaco",
+        "target_capital": "Paris, France"
+      },
+      {
+        "country": "Mongolia",
+        "target_capital": "Seoul, South Korea"
+      },
+      {
+        "country": "Montenegro",
+        "target_capital": "Belgrade, Serbia"
+      },
+      {
+        "country": "Morocco",
+        "target_capital": "Paris, France"
+      },
+      {
+        "country": "Mozambique",
+        "target_capital": "Lisbon, Portugal"
+      },
+      {
+        "country": "Myanmar",
+        "target_capital": "Bangkok, Thailand"
+      },
+      {
+        "country": "Namibia",
+        "target_capital": "Pretoria, South Africa"
+      },
+      {
+        "country": "Nauru",
+        "target_capital": "Canberra, Australia"
+      },
+      {
+        "country": "Nepal",
+        "target_capital": "Dubai, UAE"
+      },
+      {
+        "country": "Netherlands",
+        "target_capital": "Berlin, Germany"
+      },
+      {
+        "country": "New Zealand",
+        "target_capital": "Canberra, Australia"
+      },
+      {
+        "country": "Nicaragua",
+        "target_capital": "Washington, D.C., United States"
+      },
+      {
+        "country": "Niger",
+        "target_capital": "Paris, France"
+      },
+      {
+        "country": "Nigeria",
+        "target_capital": "London, United Kingdom"
+      },
+      {
+        "country": "North Korea",
+        "target_capital": "Beijing, China"
+      },
+      {
+        "country": "North Macedonia",
+        "target_capital": "Belgrade, Serbia"
+      },
+      {
+        "country": "Norway",
+        "target_capital": "Stockholm, Sweden"
+      },
+      {
+        "country": "Oman",
+        "target_capital": "Dubai, UAE"
+      },
+      {
+        "country": "Pakistan",
+        "target_capital": "Abu Dhabi, United Arab Emirates"
+      },
+      {
+        "country": "Palau",
+        "target_capital": "Washington, D.C., United States"
+      },
+      {
+        "country": "Palestine",
+        "target_capital": "Jerusalem, Israel"
+      },
+      {
+        "country": "Panama",
+        "target_capital": "Washington, D.C., United States"
+      },
+      {
+        "country": "Papua New Guinea",
+        "target_capital": "Canberra, Australia"
+      },
+      {
+        "country": "Paraguay",
+        "target_capital": "Buenos Aires, Argentina"
+      },
+      {
+        "country": "Peru",
+        "target_capital": "Madrid, Spain"
+      },
+      {
+        "country": "Philippines",
+        "target_capital": "Washington, D.C., United States"
+      },
+      {
+        "country": "Poland",
+        "target_capital": "Berlin, Germany"
+      },
+      {
+        "country": "Portugal",
+        "target_capital": "Brasília, Brazil"
+      },
+      {
+        "country": "Qatar",
+        "target_capital": "Dubai, UAE"
+      },
+      {
+        "country": "Romania",
+        "target_capital": "Rome, Italy"
+      },
+      {
+        "country": "Russia",
+        "target_capital": "Kyiv, Ukraine"
+      },
+      {
+        "country": "Rwanda",
+        "target_capital": "Brussels, Belgium"
+      },
+      {
+        "country": "Saint Kitts and Nevis",
+        "target_capital": "Washington, D.C., United States"
+      },
+      {
+        "country": "Saint Lucia",
+        "target_capital": "Washington, D.C., United States"
+      },
+      {
+        "country": "Saint Vincent and the Grenadines",
+        "target_capital": "Washington, D.C., United States"
+      },
+      {
+        "country": "Samoa",
+        "target_capital": "Wellington, New Zealand"
+      },
+      {
+        "country": "San Marino",
+        "target_capital": "Rome, Italy"
+      },
+      {
+        "country": "São Tomé and Príncipe",
+        "target_capital": "Lisbon, Portugal"
+      },
+      {
+        "country": "Saudi Arabia",
+        "target_capital": "Dubai, UAE"
+      },
+      {
+        "country": "Senegal",
+        "target_capital": "Paris, France"
+      },
+      {
+        "country": "Serbia",
+        "target_capital": "Berlin, Germany"
+      },
+      {
+        "country": "Seychelles",
+        "target_capital": "Dubai, UAE"
+      },
+      {
+        "country": "Sierra Leone",
+        "target_capital": "London, United Kingdom"
+      },
+      {
+        "country": "Singapore",
+        "target_capital": "Kuala Lumpur, Malaysia"
+      },
+      {
+        "country": "Slovakia",
+        "target_capital": "Prague, Czech Republic"
+      },
+      {
+        "country": "Slovenia",
+        "target_capital": "Berlin, Germany"
+      },
+      {
+        "country": "Solomon Islands",
+        "target_capital": "Canberra, Australia"
+      },
+      {
+        "country": "Somalia",
+        "target_capital": "London, United Kingdom"
+      },
+      {
+        "country": "South Africa",
+        "target_capital": "Harare, Zimbabwe"
+      },
+      {
+        "country": "South Korea",
+        "target_capital": "Beijing, China"
+      },
+      {
+        "country": "South Sudan",
+        "target_capital": "Khartoum, Sudan"
+      },
+      {
+        "country": "Spain",
+        "target_capital": "Bucharest, Romania"
+      },
+      {
+        "country": "Sri Lanka",
+        "target_capital": "Dubai, UAE"
+      },
+      {
+        "country": "Sudan",
+        "target_capital": "Juba, South Sudan"
+      },
+      {
+        "country": "Suriname",
+        "target_capital": "Amsterdam, Netherlands"
+      },
+      {
+        "country": "Sweden",
+        "target_capital": "Helsinki, Finland"
+      },
+      {
+        "country": "Switzerland",
+        "target_capital": "Berlin, Germany"
+      },
+      {
+        "country": "Syria",
+        "target_capital": "Beirut, Lebanon"
+      },
+      {
+        "country": "Tajikistan",
+        "target_capital": "Moscow, Russia"
+      },
+      {
+        "country": "Tanzania",
+        "target_capital": "Nairobi, Kenya"
+      },
+      {
+        "country": "Thailand",
+        "target_capital": "Naypyidaw, Myanmar"
+      },
+      {
+        "country": "Togo",
+        "target_capital": "Paris, France"
+      },
+      {
+        "country": "Tonga",
+        "target_capital": "Wellington, New Zealand"
+      },
+      {
+        "country": "Trinidad and Tobago",
+        "target_capital": "Washington, D.C., United States"
+      },
+      {
+        "country": "Tunisia",
+        "target_capital": "Paris, France"
+      },
+      {
+        "country": "Turkey",
+        "target_capital": "Berlin, Germany"
+      },
+      {
+        "country": "Turkmenistan",
+        "target_capital": "Moscow, Russia"
+      },
+      {
+        "country": "Tuvalu",
+        "target_capital": "Wellington, New Zealand"
+      },
+      {
+        "country": "Uganda",
+        "target_capital": "Nairobi, Kenya"
+      },
+      {
+        "country": "Ukraine",
+        "target_capital": "Warsaw, Poland"
+      },
+      {
+        "country": "United Arab Emirates",
+        "target_capital": "Dubai, UAE"
+      },
+      {
+        "country": "United Kingdom",
+        "target_capital": "Dubai, UAE"
+      },
+      {
+        "country": "United States",
+        "target_capital": "Dublin, Ireland"
+      },
+      {
+        "country": "Uruguay",
+        "target_capital": "Buenos Aires, Argentina"
+      },
+      {
+        "country": "Uzbekistan",
+        "target_capital": "Moscow, Russia"
+      },
+      {
+        "country": "Vanuatu",
+        "target_capital": "Canberra, Australia"
+      },
+      {
+        "country": "Vatican City",
+        "target_capital": "Rome, Italy"
+      },
+      {
+        "country": "Venezuela",
+        "target_capital": "Bogotá, Colombia"
+      },
+      {
+        "country": "Vietnam",
+        "target_capital": "Seoul, South Korea"
+      },
+      {
+        "country": "Yemen",
+        "target_capital": "Riyadh, Saudi Arabia"
+      },
+      {
+        "country": "Zambia",
+        "target_capital": "Harare, Zimbabwe"
+      },
+      {
+        "country": "Zimbabwe",
+        "target_capital": "Pretoria, South Africa"
+      }
+    ]
+  }
+  
