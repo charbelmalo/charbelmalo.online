@@ -1,0 +1,44 @@
+/* Layout and Structural Styles – mobile first */
+
+/* Container */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Header */
+.site-header {
+  background-color: transparent;
+  position: relative;
+  z-index: 100;
+}
+
+/* Navigation */
+.site-navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .site-navigation {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* Footer */
+.site-footer {
+  background-color: var(--footer-bg, #000);
+  color: var(--footer-text, #fff);
+  padding: 2rem 1rem;
+}
+
+/* Smooth scroll container */
+.smooth-scroll {
+  scroll-behavior: smooth;
+}
+
+/* Additional layout rules from existing code */
+/* ... (include critical layout rules from main.css/components if needed) ... */

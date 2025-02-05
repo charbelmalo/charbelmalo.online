@@ -1,0 +1,42 @@
+@use 'variables' as *;
+
+// Reset
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// Base HTML elements
+html {
+  font-size: $base-font-size;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: $font-family-base;
+  line-height: $base-line-height;
+  color: $primary-color;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+// Logo sizing
+.elementor img.logo-size {
+  max-width: 50px;
+}
+
+// Image containers
+.image-project-container {
+  height: 100%;
+  background-size: cover;
+  object-position: top center;
+  background-position: top center;
+}

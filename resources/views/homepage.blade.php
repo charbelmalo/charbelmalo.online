@@ -1324,6 +1324,110 @@
                           </div>
                         </div>
                       </div>
+                      <!-- This div will contain the Three.js canvas -->
+  <div id="three-container" style="width:400px;height:400px;"></div>
+
+ 
+
+  <script>
+    // Get the container element.
+    const container = document.getElementById('three-container');
+
+    // Create a new scene.
+    const scene = new THREE.Scene();
+    scene.fog = new THREE.Fog( 0xaaaaaa, 10, 100 );
+
+    // Set up a perspective camera.
+    const camera = new THREE.PerspectiveCamera(
+      45,
+      container.clientWidth / container.clientHeight,
+      0.1,
+      1000
+    );
+    camera.position.set( 0, 1, 5 );
+
+    // Create a WebGL renderer and add it to the container.
+    const renderer = new THREE.WebGLRenderer({ antialias: true });
+    renderer.setSize( container.clientWidth, container.clientHeight );
+    renderer.setPixelRatio( window.devicePixelRatio );
+    container.appendChild( renderer.domElement );
+
+    // Add some basic lighting.
+    const ambientLight = new THREE.AmbientLight( 0x404040 );
+    scene.add( ambientLight );
+
+    const directionalLight = new THREE.DirectionalLight( 0xffffff, 1 );
+    directionalLight.position.set( 5, 10, 7.5 );
+    scene.add( directionalLight );
+
+    // These variables control the orbit speed.
+    const baseSpeed = 0.01;  // Default orbit speed (radians per frame)
+    let additionalSpeed = 0; // Speed adjustment due to scroll events
+
+    // Load a glTF model using GLTFLoader.
+    // glTF is recommended for performance.
+    const loader = new THREE.GLTFLoader();
+    let model; // will hold our 3D object
+
+    loader.load(
+      '/models/model.gltf',  // adjust this path as needed
+      function ( gltf ) {
+        model = gltf.scene;
+        // Optionally scale or position the model here
+        model.scale.set( 1, 1, 1 );
+        scene.add( model );
+      },
+      undefined,
+      function ( error ) {
+        console.error( 'Error loading glTF model:', error );
+      }
+    );
+
+    // Adjust the canvas on window resize.
+    window.addEventListener( 'resize', onWindowResize, false );
+    function onWindowResize() {
+      camera.aspect = container.clientWidth / container.clientHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize( container.clientWidth, container.clientHeight );
+    }
+
+    // Listen for the wheel event to adjust the orbit speed.
+    window.addEventListener( 'wheel', function ( event ) {
+      // event.deltaY is positive when scrolling down, negative when scrolling up.
+      // Here we use a sensitivity factor to convert the scroll delta into a speed change.
+      const sensitivity = 0.0005;
+      additionalSpeed += event.deltaY * sensitivity;
+      // Clamp additionalSpeed to keep the speed within a reasonable range.
+      additionalSpeed = Math.max( -0.05, Math.min( 0.05, additionalSpeed ) );
+    }, false );
+
+    // Create an animation loop.
+    const clock = new THREE.Clock();
+
+    function animate() {
+      requestAnimationFrame( animate );
+
+      // Get the time elapsed since the last frame.
+      const delta = clock.getDelta();
+
+      // Gradually decay the additionalSpeed so that it returns toward 0 over time.
+      additionalSpeed *= 0.98;
+
+      // Total rotation speed is the base speed plus any additional speed from scrolling.
+      const currentSpeed = baseSpeed + additionalSpeed;
+
+      // If the model is loaded, update its rotation.
+      if ( model ) {
+        // Rotate the model around the Y axis.
+        model.rotation.y += currentSpeed;
+      }
+
+      // Render the scene.
+      renderer.render( scene, camera );
+    }
+
+    animate();
+  </script>
                       <div class="wd--always--show elementor-element elementor-element-6bd4272 elementor-widget elementor-widget-pebutton" data-id="6bd4272" data-element_type="widget" data-widget_type="pebutton.default">
                         <div class="elementor-widget-container">
                           <div class="pe--button pb--background false pb--marquee pb--icon icon__right pb--normal link">

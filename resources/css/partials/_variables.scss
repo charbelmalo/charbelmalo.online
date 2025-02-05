@@ -1,0 +1,32 @@
+// Colors
+$primary-color: #191b1d;
+$secondary-color: #ffffff;
+$accent-color: #00b2ff;
+
+// Typography
+$base-font-size: 16px;
+$base-line-height: 1.7;
+$font-family-base: 'Roboto', sans-serif;
+
+// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// Z-index layers
+$z-index-header: 100;
+$z-index-modal: 1000;
+
+// Transitions
+$transition-base: all 0.3s ease;
+$transition-smooth: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+
+// Spacing
+$spacing-unit: 1rem;
+$container-padding: 0 $spacing-unit;
+
+// Border radius
+$border-radius-sm: 4px;
+$border-radius-md: 8px;
+$border-radius-lg: 50px;

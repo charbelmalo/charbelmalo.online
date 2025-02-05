@@ -15,6 +15,7 @@
     </div>
 
    @include('component.scripts')
-
+ <!-- Include the GLTFLoader (needed to load glTF files) -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/examples/js/loaders/GLTFLoader.js"></script>
   </body>
 </html>

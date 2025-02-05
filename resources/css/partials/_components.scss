@@ -1,0 +1,32 @@
+@use 'variables' as *;
+
+// Mouse cursor
+#mouseCursor {
+  svg {
+    height: 100%;
+    width: 100%;
+    viewbox: 0 0 100 100;
+  }
+
+  .main-circle {
+    cx: 50;
+    cy: 50;
+    r: 50;
+  }
+}
+
+// Convai widget
+elevenlabs-convai#elevenlabsoverride {
+  position: fixed !important;
+  bottom: 15px !important;
+  right: 15px !important;
+  z-index: $z-index-modal !important;
+}
+
+div._wrapper_ly5mi_15 {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
+// Add other component styles here...
