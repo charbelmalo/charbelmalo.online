@@ -16,6 +16,7 @@
 
    @include('component.scripts')
  <!-- Include the GLTFLoader (needed to load glTF files) -->
- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/examples/js/loaders/GLTFLoader.js"></script>
+ <script type="module" src="https://unpkg.com/three@0.126.1/build/three.module.js"></script>
+ <script src={{ asset('js/three.js') }} type="module"></script>
   </body>
 </html>

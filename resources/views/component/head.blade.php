@@ -604,7 +604,4 @@
     }
   </style>
 
- <!-- Include Three.js (you can use the latest release from a CDN) -->
- <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.172.0/three.tsl.js"></script>
- 
   </head>
