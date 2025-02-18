@@ -6,11 +6,13 @@
       <div id="page" class="site">
         <a class="skip-link screen-reader-text" href="{{ url("#primary") }}">Skip to content</a>
      @include('component.navigation')
-        <div id="smooth-content"><main id="primary" class="site-main" data-barba="container">
+        <div id="smooth-content">
+          <main id="primary" class="site-main" data-barba="container">
             @yield('content')
           </main>
           @include('component.footer')
         </div>
+        @include('component.aiassistant')
       </div>
     </div>
 

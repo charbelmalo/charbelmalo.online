@@ -30,7 +30,7 @@
   }
 
   .animate-sparkle {
-    animation: rainbow 0.2s ease-in-out, sparkle 0.6s ease-in-out 0.2s forwards;
+    animation: rainbow 0.2s ease-in-out, sparkle 0.8s ease-in-out 0.2s forwards;
   }
   .elementor img.logo-size{
   
@@ -43,14 +43,18 @@ max-width: 50px;}
   }
   
 
-  div._wrapper_ly5mi_15{
+  /* div._wrapper_ly5mi_15{
     position: fixed;
     right: 10px;
     bottom: 10px;
-  }
+  } */
   elevenlabs-convai#elevenlabsoverride {
-    position: fixed !important;
+    position: absolute !important;
     bottom: 15px !important;
     right: 15px !important;
     z-index: 1000 !important; /* Ensures it appears above other elements */
+}
+.elementor img, svg, video, canvas, audio, iframe, embed, object {
+  display: inline;
+  vertical-align: middle;
 }

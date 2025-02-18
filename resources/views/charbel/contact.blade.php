@@ -219,7 +219,7 @@ var woocommerce_params = {"ajax_url":"\/wp--admin\/admin-ajax.php","wc_ajax_url"
 <div class="elementor-element elementor-element-508cca6 e-con-full pinned_true pin_container_#contact bg--color convert--none e-flex curved_false no e-con e-child" data-id="508cca6" data-element_type="container">
 <div class="elementor-element elementor-element-5630ecc elementor-widget elementor-widget-pesingleimage" data-id="5630ecc" data-element_type="widget" data-widget_type="pesingleimage.default">
 <div class="elementor-widget-container">
-<div class="single-image single--image"><video class="" autoplay loop muted playsinline src="{{ asset('/assets/animation/avatar.webm') }}"></video></div>
+<div class="single-image single--image"><video class="avatar-video" autoplay loop muted playsinline src="{{ asset('/assets/animation/avatar.webm') }}"></video></div>
 </div>
 </div>
 <div class="elementor-element elementor-element-9d07c2a elementor-widget elementor-widget-petextwrapper" data-id="9d07c2a" data-element_type="widget" data-widget_type="petextwrapper.default">

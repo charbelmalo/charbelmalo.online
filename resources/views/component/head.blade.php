@@ -8,6 +8,7 @@
     <link rel="alternate" type="application/rss+xml" title="Charbel &raquo; Comments Feed" href="{{ asset("/comments/feed/index.rss") }}" />
     <link rel="stylesheet" id="plugins-css" href="{{ asset("/wp-content/themes/leksa/css/plugins%EF%B9%96ver=6.5.3.css") }}" media="all" />
     <link rel="stylesheet" id="style-css" href="{{ asset("/wp-content/themes/leksa/style%EF%B9%96ver=6.5.3.css") }}" media="all" />
+    @vite('resources/css/main.scss')
     <style id="classic-theme-styles-inline-css">
       /*! This file is auto-generated */
       .wp-block-button__link {
