@@ -48,12 +48,7 @@ max-width: 50px;}
     right: 10px;
     bottom: 10px;
   } */
-  elevenlabs-convai#elevenlabsoverride {
-    position: absolute !important;
-    bottom: 15px !important;
-    right: 15px !important;
-    z-index: 1000 !important; /* Ensures it appears above other elements */
-}
+  
 .elementor img, svg, video, canvas, audio, iframe, embed, object {
   display: inline;
   vertical-align: middle;

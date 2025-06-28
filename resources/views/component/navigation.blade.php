@@ -36,7 +36,7 @@
               <nav id="site-navigation" class="main-navigation st--only" data-sub-toggle="&lt;span class=&quot;sub--toggle st--plus&quot;&gt;&lt;span class=&quot;toggle--line&quot;&gt;&lt;/span&gt;&lt;span class=&quot;toggle--line&quot;&gt;&lt;/span&gt;&lt;/span&gt;">
                 
                 
-                <ul id="menu-main-menu-hozirontal-1" class="menu main-menu menu--horizontal ">
+                <ul id="menu-main-menu-hozirontal-1" class="menu main-menu ">
                   
                   
                   <li class="menu-item menu-item-type-post_type menu-item-object-page leksa-has-children  menu-item-213">

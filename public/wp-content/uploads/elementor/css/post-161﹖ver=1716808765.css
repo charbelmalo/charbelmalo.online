@@ -876,7 +876,7 @@
     --gap: 0px 0px;
     --background-transition: 0.3s;
     --margin-top: 200px;
-    --margin-bottom: 200px;
+    --margin-bottom: 50px;
     --margin-left: 0px;
     --margin-right: 0px;
   }
@@ -986,7 +986,7 @@
       --width: 50%;
     }
     .elementor-161 .elementor-element.elementor-element-d7e87b7 {
-      --width: 20%;
+      --width: 24%;
     }
     .elementor-161 .elementor-element.elementor-element-50f406e {
       --width: 25%;

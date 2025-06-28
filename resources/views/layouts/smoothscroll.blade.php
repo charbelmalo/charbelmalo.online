@@ -8,17 +8,20 @@
      @include('component.navigation')
         <div id="smooth-content">
           <main id="primary" class="site-main" data-barba="container">
+            <script type="module" src="https://unpkg.com/three@0.126.1/build/three.module.js"></script>
             @yield('content')
           </main>
           @include('component.footer')
         </div>
+        <div class="elementor-widget-container">
         @include('component.aiassistant')
+        </div>
       </div>
     </div>
 
    @include('component.scripts')
  <!-- Include the GLTFLoader (needed to load glTF files) -->
- <script type="module" src="https://unpkg.com/three@0.126.1/build/three.module.js"></script>
- <script src={{ asset('js/three.js') }} type="module"></script>
+ 
+
   </body>
 </html>

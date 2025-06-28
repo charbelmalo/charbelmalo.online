@@ -334,3 +334,4 @@
     <script src="{{ asset("/wp-content/plugins/elementor/assets/js/frontend.min%EF%B9%96ver=3.21.4.js") }}" id="elementor-frontend-js"></script>
     <script src="{{ asset("/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min%EF%B9%96ver=3.21.2.js") }}" id="pro-elements-handlers-js"></script>
     <script src="{{ asset("/assets/js/main.js") }}" id="custom-js"></script>
+    

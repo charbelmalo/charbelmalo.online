@@ -271,7 +271,7 @@ html {
     --mainColor: #070707;
     --secondaryColor: #858585;
     --mainBackground: #f0f0f0;
-    --secondaryBackground: #dcdcdc
+    --secondaryBackground: #dcdcdc;
 }
 
 .header--switched,
@@ -280,7 +280,7 @@ html {
     --secondaryBackground: #111111;
     --secondaryColor: #858585;
     --mainBackground: #141414;
-    --mainColor: #dddddd
+    --mainColor: #dddddd;
 }
 
 .layout--switched .main-img,
@@ -1026,7 +1026,7 @@ body.search.search-no-results main .pe-section {
     background: #000;
     opacity: 0;
     z-index: 1;
-    overflow: hidden
+    overflow: hidden;
 }
 
 .page--loader--caption {

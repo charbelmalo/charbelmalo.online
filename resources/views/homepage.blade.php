@@ -277,9 +277,9 @@
                               </div>
                               <div class="portfolio--project inner--anim">
                                 <article id="post-9311" class="post-9311 portfolio type-portfolio status-publish hentry project-categories-branding">
-                                  <a class="barba--trigger" href="#coming-soon" data-cursor="true" data-cursor-type="text" data-cursor-text="Details Coming Soon" data-cursor-icon data-id="9311">
+                                  <a class="barba--trigger" href="{{route('portfolio.hovi')}}" data-cursor="true" data-cursor-type="text" data-cursor-text="View" data-cursor-icon data-id="9311">
                                     <div class="project--image">
-                                      <div class="image-project-container" style="background-image: url('assets/img/projects/PLG.jpg');"></div>
+                                      <div class="image-project-container" style="background-image: url('assets/img/projects/hovi-scroll.jpg');"></div>
                                     </div>
                                     <div class="project--details">
                                       <div class="project--tc block">
@@ -329,7 +329,7 @@
                                   </a>
                                 </article>
                               </div>
-                              {{-- <div class="portfolio--project inner--anim">
+                              <div class="portfolio--project inner--anim">
                                 <article id="post-9116" class="post-9116 portfolio type-portfolio status-publish hentry project-categories-branding">
                                   <a class="barba--trigger" href="#comingsoon" data-cursor="true" data-cursor-type="text" data-cursor-text="Details Coming Soon" data-cursor-icon data-id="9116">
                                     <div class="project--image project__image__9340">
@@ -355,7 +355,7 @@
                                     </div>
                                   </a>
                                 </article>
-                              </div> --}}
+                              </div>
                               <div class="portfolio--project inner--anim">
                                 <article id="post-9348" class="post-9348 portfolio type-portfolio status-publish hentry project-categories-web-design">
                                   <a class="barba--trigger" href="#comingsoon" data-cursor="true" data-cursor-type="text" data-cursor-text="Details Coming Soon" data-cursor-icon data-id="9348">
@@ -514,7 +514,8 @@
                          <div class="elementor-element elementor-element-0c26b6e elementor-widget elementor-widget-petextwrapper" data-id="0c26b6e" data-element_type="widget" data-widget_type="petextwrapper.default">
                             <div class="elementor-widget-container">
                               <div class="text-wrapper">
-                                <p class="text-p no-margin">Proficient in Three.js and GSAP, I create immersive 3D web experiences and smooth, dynamic animations. I integrate interactive graphics and sophisticated motion effects, enhancing user engagement and delivering visually captivating web projects.</p>
+                                <p class="text-p no-margin">Using Three.js and GSAP, I create immersive 3D web animations with interactive graphics, delivering smooth, dynamic motion experiences that captivate audiences.
+                                </p>
                               </div>
                             </div>
                           </div>
@@ -540,7 +541,7 @@
                           <div class="elementor-element elementor-element-0c26b6e elementor-widget elementor-widget-petextwrapper" data-id="0c26b6e" data-element_type="widget" data-widget_type="petextwrapper.default">
                             <div class="elementor-widget-container">
                               <div class="text-wrapper">
-                                <p class="text-p no-margin">I design intuitive, user-friendly interfaces and create interactive prototypes using Figma. Collaborating seamlessly with teams, I leverage Figma’s advanced features to streamline the design process and deliver high-quality, responsive digital experiences.</p>
+                                <p class="text-p no-margin">I design user-friendly interfaces and build interactive prototypes using Figma I collaborate with teams to create modern digital experiences that delight users.</p>
                               </div>
                             </div>
                           </div>
@@ -568,7 +569,7 @@
                           <div class="elementor-element elementor-element-4bd3103 elementor-widget elementor-widget-petextwrapper" data-id="4bd3103" data-element_type="widget" data-widget_type="petextwrapper.default">
                             <div class="elementor-widget-container">
                               <div class="text-wrapper">
-                                <p class="text-p no-margin">As HuggingFace’s #2 Creator of the Year in the MENA region (2023), I develop sophisticated AI solutions programmatically. My expertise in machine learning and natural language processing allows me to build and deploy cutting-edge AI models that drive innovation.</p>
+                                <p class="text-p no-margin">As HuggingFace’s #2 in MENA (2023), I build advanced AI models with machine learning and NLP, crafting innovative solutions that propel for real digital progress.</p>
                               </div>
                             </div>
                           </div>
@@ -596,7 +597,7 @@
                           <div class="elementor-element elementor-element-26e3036 elementor-widget elementor-widget-petextwrapper" data-id="26e3036" data-element_type="widget" data-widget_type="petextwrapper.default">
                             <div class="elementor-widget-container">
                               <div class="text-wrapper">
-                                <p class="text-p no-margin">Proficient in Adobe CreativeCloud Suite, I create stunning visuals, sophisticated animations, and professional-grade multimedia content. Utilizing tools like Photoshop, Illustrator, and After Effects, I deliver compelling designs and seamless creative projects.</p>
+                                <p class="text-p no-margin">Using Adobe CreativeCloud Suite I create visuals, animations, and multimedia content. I use Photoshop, Illustrator and After Effects to deliver compelling designs.</p>
                               </div>
                             </div>
                           </div>
@@ -624,7 +625,7 @@
                           <div class="elementor-element elementor-element-56247a7 elementor-widget elementor-widget-petextwrapper" data-id="56247a7" data-element_type="widget" data-widget_type="petextwrapper.default">
                             <div class="elementor-widget-container">
                               <div class="text-wrapper">
-                                <p class="text-p no-margin">Skilled in full-stack development across all frameworks, an expert builds robust, scalable web applications from front-end interfaces to back-end infrastructure. They seamlessly integrate various technologies to deliver comprehensive, high-performance solutions tailored to client needs.</p>
+                                <p class="text-p no-margin">I develop full-stack solutions by building scalable web apps from front-end to back-end, integrating diverse technologies for robust, high-performance outcomes.</p>
                               </div>
                             </div>
                           </div>
@@ -652,7 +653,7 @@
                           <div class="elementor-element elementor-element-desc5 elementor-widget elementor-widget-petextwrapper" data-id="desc5" data-element_type="widget" data-widget_type="petextwrapper.default">
                             <div class="elementor-widget-container">
                               <div class="text-wrapper">
-                                <p class="text-p no-margin">I specialize in iOS and macOS app development, crafting seamless, high-performance applications using Swift and Objective-C. I design intuitive user interfaces, ensure optimal performance, and implement robust features to deliver exceptional user experiences on Apple platforms.</p>
+                                <p class="text-p no-margin">I expertly develop iOS/macOS apps using Swift and Objective-C, crafting intuitive interfaces and robust features for true impact, - outstanding Apple experiences.</p>
                               </div>
                             </div>
                           </div>
@@ -962,8 +963,8 @@
                 </div>
               </div>
             </article>
+            <script src={{ asset('js/three.js') }} type="module"></script>
 <script>
-
 async function fetchJson() {
   const response = await fetch("{{asset("assets/js/countries_list.json")}}"); // Replace with the actual path to your JSON file
   const data = await response.json();
@@ -1001,4 +1002,5 @@ var userCountryLoc = getUserLocation();
 document.addEventListener('DOMContentLoaded', updateTargetLocation);
 
 </script>
+
             @endsection

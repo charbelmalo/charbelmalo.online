@@ -12,8 +12,8 @@
             <div class="elementor-element elementor-element-a1e8012 elementor-widget elementor-widget-projectmedia" data-id="a1e8012" data-element_type="widget" data-widget_type="projectmedia.default">
               <div class="elementor-widget-container">
                 <div class="project-featured-image p--featured featured__9340" style="background-color: #E1DAD1">
-                  <img loading="lazy" width="2000" height="1500" src="{{asset("/assets/img/projects/Grower.jpg")}}" class="attachment-full size-full" style="
-      object-position: top;" decoding="async" srcset="{{asset("/assets/img/projects/Grower.jpg")}} 2000w, {{asset("/assets/img/projects/Grower.jpg")}} 300w, {{asset("/assets/img/projects/Grower.jpg")}} 1024w, {{asset("/assets/img/projects/Grower.jpg")}} 768w, {{asset("/assets/img/projects/Grower.jpg")}} 1536w" sizes="(max-width: 2000px) 100vw, 2000px" />
+                  <img loading="lazy" width="2000" height="1500" src="{{asset("/assets/img/projects/hovi-scroll.jpg")}}" class="attachment-full size-full" style="
+      object-position: top;" decoding="async" srcset="{{asset("/assets/img/projects/hovi-scroll.jpg")}} 2000w, {{asset("/assets/img/projects/hovi-scroll.jpg")}} 300w, {{asset("/assets/img/projects/hovi-scroll.jpg")}} 1024w, {{asset("/assets/img/projects/hovi-scroll.jpg")}} 768w, {{asset("/assets/img/projects/hovi-scroll.jpg")}} 1536w" sizes="(max-width: 2000px) 100vw, 2000px" />
                 </div>
               </div>
             </div>
@@ -69,7 +69,7 @@
       </div>
     </div>
     <div id="content" class="page-content project-page-content">
-      <div data-elementor-type="wp-post" data-elementor-id="9340" class="elementor elementor-9340" data-elementor-post-type="portfolio">
+      <div data-elementor-type="wp-post" data-elementor-id="9311" class="elementor elementor-9340" data-elementor-post-type="portfolio">
         <div class="elementor-element elementor-element-543e933e e-con-full convert--none e-flex bg--none no e-con e-parent" data-id="543e933e" data-element_type="container">
           <div class="elementor-element elementor-element-158ed4bc elementor-widget elementor-widget-pesingleimage" data-id="158ed4bc" data-element_type="widget" data-widget_type="pesingleimage.default">
             <div class="elementor-widget-container">
@@ -193,7 +193,7 @@
               <div class="elementor-element elementor-element-349f62aa elementor-widget elementor-widget-petextwrapper" data-id="349f62aa" data-element_type="widget" data-widget_type="petextwrapper.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
-                    <p class="text-p p-large no-margin " data-animate="true" data-animation="linesUp" >The UX focuses on creating a scalable design system that accommodates diverse user personas, from marketing managers to executives, ensuring accessibility and functionality across all levels of expertise.</p>
+                    <p class="text-p p-large no-margin " data-animate="true" data-animation="linesUp" data-settings="{duration=1.5;delay=0;stagger=0.1;pin=false;pinTarget=;scrub=false;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}">The UX focuses on creating a scalable design system that accommodates diverse user personas, from marketing managers to executives, ensuring accessibility and functionality across all levels of expertise.</p>
                   </div>
                 </div>
               </div>
