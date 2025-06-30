@@ -1,53 +1,101 @@
-@extends('layouts.smoothscroll') 
+@extends('layouts.app') 
 @section('content') 
 
-
-<article class="elementor-161 page type-page status-publish hentry"><div class="entry-content">
-
-<div class="project-page" style="max-width: 1800px; margin:auto" data-elementor-type="wp-page" data-elementor-id="161" class="elementor elementor-161" data-elementor-post-type="page">
-    <div class="project-hero">
-      <div data-elementor-type="project-hero" data-elementor-id="6855" class="elementor elementor-6855" data-elementor-post-type="elementor_library">
-        <div class="elementor-element elementor-element-26b19ad e-con-full convert--none e-flex bg--none no e-con e-parent" data-id="26b19ad" data-element_type="container">
-          <div class="elementor-element elementor-element-5e297e8 e-con-full convert--none e-flex bg--none no e-con e-child" data-id="5e297e8" data-element_type="container">
-            <div class="elementor-element elementor-element-a1e8012 elementor-widget elementor-widget-projectmedia" data-id="a1e8012" data-element_type="widget" data-widget_type="projectmedia.default">
-              <div class="elementor-widget-container">
-                <div class="project-featured-image p--featured featured__9340" style="background-color: #E1DAD1">
-                  <img loading="lazy" width="2000" height="1500" src="{{asset("/assets/img/projects/hovi-scroll.jpg")}}" class="attachment-full size-full" style="
-      object-position: top;" decoding="async" srcset="{{asset("/assets/img/projects/hovi-scroll.jpg")}} 2000w, {{asset("/assets/img/projects/hovi-scroll.jpg")}} 300w, {{asset("/assets/img/projects/hovi-scroll.jpg")}} 1024w, {{asset("/assets/img/projects/hovi-scroll.jpg")}} 768w, {{asset("/assets/img/projects/hovi-scroll.jpg")}} 1536w" sizes="(max-width: 2000px) 100vw, 2000px" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="elementor-element elementor-element-51ad634 e-con-full convert--none e-flex bg--none no e-con e-child" data-id="51ad634" data-element_type="container">
-            <div class="elementor-element elementor-element-938043c e-con-full convert--none e-flex bg--none no e-con e-child" data-id="938043c" data-element_type="container">
-              <div class="elementor-element elementor-element-6d893c3 elementor-widget elementor-widget-peprojectfield" data-id="6d893c3" data-element_type="widget" data-widget_type="peprojectfield.default">
-                <div class="elementor-widget-container">
-                  <div class="text-wrapper">
-                    <p class="text-h1 no-margin " data-animate="true" data-animation="charsUp" data-settings="{duration=1.5;delay=0;stagger=0.05;pin=;pinTarget=;scrub=;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}"> GrowerAI </p>
-                    <div class="project--icon">
-                      <span class="text-h6 no-margin " data-animate="true" data-animation="charsUp" data-settings="{duration=1.5;delay=0;stagger=0.05;pin=;pinTarget=;scrub=;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}">
-                        <i aria-hidden="true" class="material-icons-sharp md-arrow_outward" data-md-icon="arrow_outward"></i> GrowerAI </span>
+<article class="elementor-161 page type-page status-publish hentry">
+    <div class="entry-content">
+        <div class="project-page" style="max-width: 1800px; margin:auto" data-elementor-type="wp-page" data-elementor-id="161" class="elementor elementor-161" data-elementor-post-type="page">
+            <div class="project-hero">
+                <div data-elementor-type="project-hero" data-elementor-id="6855" class="elementor elementor-6855" data-elementor-post-type="elementor_library">
+                    <div class="elementor-element elementor-element-26b19ad e-con-full convert--none e-flex bg--none no e-con e-parent" data-id="26b19ad" data-element_type="container">
+                        <div class="elementor-element elementor-element-5e297e8 e-con-full convert--none e-flex bg--none no e-con e-child" data-id="5e297e8" data-element_type="container">
+                            <div class="elementor-element elementor-element-a1e8012 elementor-widget elementor-widget-projectmedia" data-id="a1e8012" data-element_type="widget" data-widget_type="projectmedia.default">
+                                <div class="elementor-widget-container">
+                                    <div class="project-featured-image p--featured featured__9311" style="background-color: #E1DAD1">
+                                        <img loading="lazy" width="2000" height="1500" src="{{ asset('/assets/img/projects/hovi-scroll.jpg') }}" class="attachment-full size-full" style="object-position: top;" decoding="async" alt="Hovi Digital Lab Project" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-51ad634 e-con-full convert--none e-flex bg--none no e-con e-child" data-id="51ad634" data-element_type="container">
+                            <div class="elementor-element elementor-element-938043c e-con-full convert--none e-flex bg--none no e-con e-child" data-id="938043c" data-element_type="container">
+                                <div class="elementor-element elementor-element-6d893c3 elementor-widget elementor-widget-peprojectfield" data-id="6d893c3" data-element_type="widget" data-widget_type="peprojectfield.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="text-wrapper">
+                                            <h1 class="text-h1 no-margin" data-animate="true" data-animation="charsUp" data-settings="{duration=1.5;delay=0;stagger=0.05;pin=;pinTarget=;scrub=;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}">Hovi Digital Lab</h1>
+                                            <div class="project--icon">
+                                                <span class="text-h6 no-margin" data-animate="true" data-animation="charsUp" data-settings="{duration=1.5;delay=0;stagger=0.05;pin=;pinTarget=;scrub=;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}">
+                                                    <i aria-hidden="true" class="material-icons-sharp md-arrow_outward" data-md-icon="arrow_outward"></i> Smart Marketing Agency
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="elementor-element elementor-element-dfc6df8 e-con-full convert--none e-flex bg--none no e-con e-child" data-id="dfc6df8" data-element_type="container">
+                                <div class="elementor-element elementor-element-93ffbdc elementor-widget elementor-widget-peprojectfield" data-id="93ffbdc" data-element_type="widget" data-widget_type="peprojectfield.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="text-wrapper">
+                                            <p class="text-p" data-animate="true" data-animation="wordsUp" data-settings="{duration=1;delay=0;stagger=0.01;pin=;pinTarget=;scrub=;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}">A smart marketing agency specializing in providing customers with top-tier services to boost their social media engagement and exposure through innovative digital strategies.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-5553ba6 elementor-widget__width-auto elementor-widget elementor-widget-peprojectfield" data-id="5553ba6" data-element_type="widget" data-widget_type="peprojectfield.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="text-wrapper">
+                                            <p class="text-p no-margin" data-animate="true" data-animation="wordsUp" data-settings="{duration=1.5;delay=0;stagger=0.1;pin=;pinTarget=;scrub=;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}">Smart Marketing Agency</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-55f975f elementor-widget__width-auto elementor-widget elementor-widget-peprojectfield" data-id="55f975f" data-element_type="widget" data-widget_type="peprojectfield.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="text-wrapper">
+                                            <p class="text-p no-margin" data-animate="true" data-animation="wordsUp" data-settings="{duration=1.5;delay=0;stagger=0.1;pin=;pinTarget=;scrub=;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}">UX Specialist & Animation Expert</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-4ddcbbe elementor-widget__width-auto elementor-widget elementor-widget-peprojectfield" data-id="4ddcbbe" data-element_type="widget" data-widget_type="peprojectfield.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="text-wrapper">
+                                            <p class="text-p no-margin" data-animate="true" data-animation="wordsUp" data-settings="{duration=1.5;delay=0;stagger=0.1;pin=;pinTarget=;scrub=;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}">2023</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
             </div>
-            <div class="elementor-element elementor-element-dfc6df8 e-con-full convert--none e-flex bg--none no e-con e-child" data-id="dfc6df8" data-element_type="container">
-              <div class="elementor-element elementor-element-93ffbdc elementor-widget elementor-widget-peprojectfield" data-id="93ffbdc" data-element_type="widget" data-widget_type="peprojectfield.default">
-                <div class="elementor-widget-container">
-                  <div class="text-wrapper">
-                    <p class="text-p   " data-animate="true" data-animation="wordsUp" data-settings="{duration=1;delay=0;stagger=0.01;pin=;pinTarget=;scrub=;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}">Grower is a cutting-edge AI-powered marketing platform designed with a user-first approach, focusing on streamlining operations, analyze performance, and drive ROI through advanced automation and insights.</p>
-                  </div>
+            
+            {{-- Project Content Section --}}
+            <div class="project-content">
+                <div class="elementor-element elementor-element-content e-con-full convert--none e-flex bg--none no e-con e-parent" data-id="content" data-element_type="container">
+                    <div class="elementor-element elementor-element-text e-con-full convert--none e-flex bg--none no e-con e-child" data-id="text" data-element_type="container">
+                        <div class="elementor-widget-container">
+                            <div class="text-wrapper">
+                                <h2 class="text-h3 no-margin">Project Overview</h2>
+                                <p class="text-p p-large">Hovi Digital Lab represents a comprehensive digital marketing solution designed to elevate brands through strategic social media management, content creation, and engagement optimization. This project showcases advanced UX design principles combined with cutting-edge animation techniques to create an immersive digital experience.</p>
+                                
+                                <h3 class="text-h4">Key Features</h3>
+                                <ul class="project-features">
+                                    <li>• Strategic Social Media Campaign Management</li>
+                                    <li>• Advanced Analytics and Performance Tracking</li>
+                                    <li>• Custom Content Creation and Curation</li>
+                                    <li>• Interactive User Engagement Tools</li>
+                                    <li>• Responsive Design Across All Platforms</li>
+                                </ul>
+                                
+                                <h3 class="text-h4">Technologies Used</h3>
+                                <p class="text-p">The project utilized modern web technologies including advanced CSS animations, JavaScript frameworks, and responsive design principles to ensure optimal performance across all devices and platforms.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="elementor-element elementor-element-5553ba6 elementor-widget__width-auto elementor-widget elementor-widget-peprojectfield" data-id="5553ba6" data-element_type="widget" data-widget_type="peprojectfield.default">
-                <div class="elementor-widget-container">
-                  <div class="text-wrapper">
-                    <p class="text-p  no-margin " data-animate="true" data-animation="wordsUp" data-settings="{duration=1.5;delay=0;stagger=0.1;pin=;pinTarget=;scrub=;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}">AI Marketing Platform</p>
-                  </div>
-                </div>
-              </div>
-              <div class="elementor-element elementor-element-55f975f elementor-widget__width-auto elementor-widget elementor-widget-peprojectfield" data-id="55f975f" data-element_type="widget" data-widget_type="peprojectfield.default">
+            </div>
+        </div>
+    </div>
+</article>
+
+@endsection
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
                     <p class="text-p  no-margin " data-animate="true" data-animation="wordsUp" data-settings="{duration=1.5;delay=0;stagger=0.1;pin=;pinTarget=;scrub=;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}"> 2024 </p>

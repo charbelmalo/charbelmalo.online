@@ -1,4 +1,4 @@
-@extends('layouts.smoothscroll') 
+@extends('layouts.app') 
 @section('content') 
 
 

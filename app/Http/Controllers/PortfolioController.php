@@ -22,4 +22,28 @@ class PortfolioController extends Controller
     {
         return view('portfolio.hovi');
     }
+
+    /**
+     * Display the portfolio pellini project.
+     */
+    public function pellini(): View
+    {
+        return view('portfolio.pellini');
+    }
+
+    /**
+     * Display the portfolio vertical software project.
+     */
+    public function verticalSoftware(): View
+    {
+        return view('portfolio.vertical-software');
+    }
+
+    /**
+     * Display the portfolio NFE project.
+     */
+    public function nfe(): View
+    {
+        return view('portfolio.nfe');
+    }
 }

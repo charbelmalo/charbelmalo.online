@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ContactRequest;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
+use Illuminate\Http\RedirectResponse;
 
 class ContactController extends Controller
 {
@@ -12,22 +14,21 @@ class ContactController extends Controller
      */
     public function index(): View
     {
-        return view('pages.contact');
+        return view('charbel.contact');
     }
 
     /**
      * Handle contact form submission.
      */
-    public function store(Request $request)
+    public function store(ContactRequest $request): RedirectResponse
     {
-        $validated = $request->validate([
-            'name' => 'required|max:255',
-            'email' => 'required|email|max:255',
-            'message' => 'required|max:2000',
-        ]);
+        $validated = $request->validated();
 
-        // Handle contact form logic here
-        // (send email, store in database, etc.)
+        // TODO: Implement contact form logic here
+        // Examples:
+        // - Send email notification
+        // - Store in database
+        // - Send to external service
 
         return back()->with('success', 'Message sent successfully!');
     }

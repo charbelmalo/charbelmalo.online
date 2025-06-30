@@ -19,3 +19,33 @@ yarn-error.log
 /.idea
 /.vscode
 .DS_Store
+
+# Additional Laravel specific ignores
+/storage/debugbar/
+/storage/logs/*.log
+*.log
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+
+# Custom CSS/JS build files that are dynamically generated
+/public/css/
+/public/js/build/
+
+# Environment-specific files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
