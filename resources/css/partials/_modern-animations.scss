@@ -1,0 +1,138 @@
+// Modern CSS Custom Properties for Animations
+:root {
+  // Animation timings
+  --animation-duration-fast: 0.2s;
+  --animation-duration-normal: 0.3s;
+  --animation-duration-slow: 0.6s;
+  --animation-duration-extra-slow: 1.2s;
+
+  // Easing functions
+  --ease-in-out-cubic: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out-back: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --ease-spring: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  // Animation states
+  --sparkle-opacity: 0;
+  --sparkle-scale: 0.8;
+  --sparkle-blur: 4px;
+}
+
+// Performance-optimized sparkle animation
+.sparkle {
+  position: relative;
+  overflow: hidden;
+  transition: 
+    transform var(--animation-duration-normal) var(--ease-out-expo),
+    filter var(--animation-duration-normal) var(--ease-out-expo);
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      45deg,
+      transparent 30%,
+      rgba(255, 255, 255, 0.3) 50%,
+      transparent 70%
+    );
+    background-size: 200% 200%;
+    opacity: var(--sparkle-opacity);
+    transform: scale(var(--sparkle-scale));
+    filter: blur(var(--sparkle-blur));
+    will-change: opacity, transform, filter;
+    pointer-events: none;
+  }
+
+  &.animate-sparkle {
+    --sparkle-opacity: 1;
+    --sparkle-scale: 1;
+    --sparkle-blur: 0px;
+    
+    &::before {
+      animation: sparkle-sweep var(--animation-duration-extra-slow) var(--ease-out-expo) infinite;
+    }
+  }
+}
+
+// Optimized rainbow animations with CSS custom properties
+@property --rainbow-hue {
+  syntax: '<number>';
+  inherits: false;
+  initial-value: 0;
+}
+
+.rainbow-text {
+  --rainbow-hue: 0;
+  color: hsl(var(--rainbow-hue), 70%, 60%);
+  transition: --rainbow-hue var(--animation-duration-slow) linear;
+  
+  &.animate {
+    animation: rainbow-cycle 3s linear infinite;
+  }
+}
+
+// Enhanced keyframes with better performance
+@keyframes sparkle-sweep {
+  0% {
+    background-position: -100% -100%;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    background-position: 100% 100%;
+    opacity: 0;
+  }
+}
+
+@keyframes rainbow-cycle {
+  0% { --rainbow-hue: 0; }
+  100% { --rainbow-hue: 360; }
+}
+
+// Scroll-triggered animations with Intersection Observer optimization
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(2rem);
+  transition: 
+    opacity var(--animation-duration-slow) var(--ease-out-expo),
+    transform var(--animation-duration-slow) var(--ease-out-expo);
+  
+  &.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.scale-in {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: 
+    opacity var(--animation-duration-normal) var(--ease-spring),
+    transform var(--animation-duration-normal) var(--ease-spring);
+  
+  &.in-view {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+// Media query optimizations for reduced motion
+@media (prefers-reduced-motion: reduce) {
+  .sparkle,
+  .rainbow-text,
+  .fade-in-up,
+  .scale-in {
+    animation: none !important;
+    transition: none !important;
+  }
+  
+  .sparkle::before {
+    display: none;
+  }
+}
