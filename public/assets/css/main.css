@@ -30,7 +30,7 @@
   }
 
   .animate-sparkle {
-    animation: rainbow 0.2s ease-in-out, sparkle 0.8s ease-in-out 0.2s forwards;
+    animation: sparkle 0.8s ease-in-out 0.2s forwards;
   }
   .elementor img.logo-size{
   

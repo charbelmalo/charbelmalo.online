@@ -1,6 +1,7 @@
 @use 'variables' as *;
+@use 'sass:color';
 
-// Reset
+/* CSS Reset and Base Styles */
 *,
 *::before,
 *::after {
@@ -9,38 +10,96 @@
   padding: 0;
 }
 
-// Base HTML elements
+/* Base HTML elements */
 html {
   font-size: $base-font-size;
+  line-height: $base-line-height;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: $font-family-base;
   line-height: $base-line-height;
   color: $primary-color;
+  background-color: $secondary-color;
+  overflow-x: hidden;
 }
 
-img {
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.5em;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+p {
+  margin-bottom: 1em;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* Lists */
+ul, ol {
+  margin-bottom: 1em;
+  padding-left: 1.5em;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* Links */
+a {
+  color: $accent-color;
+  text-decoration: none;
+  transition: $transition-base;
+  
+  &:hover,
+  &:focus {
+    color: color.adjust($accent-color, $lightness: -10%);
+    text-decoration: underline;
+  }
+}
+
+/* Media elements */
+img, video, audio, iframe, embed, object {
   max-width: 100%;
   height: auto;
   display: block;
+  
+  &.inline {
+    display: inline;
+    vertical-align: middle;
+  }
 }
 
-// Logo sizing
-.elementor img.logo-size {
-  max-width: 50px;
+/* Form elements */
+input, textarea, select, button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
 }
 
-// Image containers
-.image-project-container {
-  height: 100%;
-  background-size: cover;
-  object-position: top center;
-  background-position: top center;
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
 }
-.elementor img, svg, video, canvas, audio, iframe, embed, object {
-  display: inline;
-  vertical-align: middle;
+
+/* Focus styles for accessibility */
+:focus-visible {
+  outline: 2px solid $accent-color;
+  outline-offset: 2px;
 }

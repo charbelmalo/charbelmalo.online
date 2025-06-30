@@ -1,0 +1,123 @@
+@use 'variables' as *;
+
+/* WordPress and Legacy Overrides */
+/* This file contains overrides for WordPress-specific classes and legacy styles */
+
+/* Elementor Overrides */
+.elementor {
+  img, svg, video, canvas, audio, iframe, embed, object {
+    display: inline;
+    vertical-align: middle;
+  }
+  
+  img.logo-size {
+    max-width: 50px;
+  }
+}
+
+/* Project image containers */
+.image-project-container {
+  height: 100%;
+  background-size: cover;
+  object-position: top center;
+  background-position: top center;
+  transition: $transition-smooth;
+  
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+/* WordPress Block Editor Overrides */
+.wp-block-button__link {
+  background-color: $accent-color;
+  color: $secondary-color;
+  border-radius: $border-radius-lg;
+  padding: calc(0.667em + 2px) calc(1.333em + 2px);
+  text-decoration: none;
+  transition: $transition-base;
+  
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+/* Legacy WordPress Theme Cleanup */
+.wp-block-archives,
+.wp-block-avatar,
+.wp-block-audio,
+.wp-block-button,
+.wp-block-buttons {
+  box-sizing: border-box;
+}
+
+/* Remove WordPress-specific margins and paddings that conflict */
+.wp-block-button {
+  margin: 0;
+  
+  &.is-style-squared {
+    border-radius: 0;
+    
+    .wp-block-button__link {
+      border-radius: 0;
+    }
+  }
+  
+  &.no-border-radius {
+    border-radius: 0;
+    
+    .wp-block-button__link {
+      border-radius: 0;
+    }
+  }
+}
+
+/* WordPress buttons style overrides */
+.wp-block-buttons {
+  &.is-vertical {
+    flex-direction: column;
+    
+    > .wp-block-button:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  > .wp-block-button {
+    display: inline-block;
+    margin: 0;
+    
+    &.has-custom-width {
+      max-width: none;
+      
+      .wp-block-button__link {
+        width: 100%;
+      }
+    }
+    
+    &.has-custom-font-size .wp-block-button__link {
+      font-size: inherit;
+    }
+  }
+}
+
+/* Clean up old WordPress navigation styles */
+.wp-block-navigation {
+  .wp-block-navigation__container {
+    gap: $spacing-unit;
+  }
+}
+
+/* Override WordPress default styles that conflict with our design system */
+.wp-block-group,
+.wp-block-columns,
+.wp-block-column {
+  box-sizing: border-box;
+}
+
+/* Ensure our custom styles take precedence over WordPress defaults */
+.site-header,
+.site-footer,
+.main-content {
+  position: relative;
+  z-index: 1;
+}

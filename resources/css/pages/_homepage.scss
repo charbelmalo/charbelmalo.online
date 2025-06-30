@@ -1,0 +1,74 @@
+@use '../partials/variables' as *;
+@use 'sass:color';
+
+/* Homepage specific styles */
+.homepage {
+  .hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, $primary-color 0%, color.adjust($primary-color, $lightness: -10%) 100%);
+    color: $secondary-color;
+    
+    .hero-title {
+      font-size: clamp(2rem, 5vw, 4rem);
+      margin-bottom: 1rem;
+      opacity: 0;
+      animation: fadeInUp 1s ease-out forwards;
+    }
+    
+    .hero-subtitle {
+      font-size: clamp(1rem, 3vw, 1.5rem);
+      opacity: 0.9;
+      margin-bottom: 2rem;
+      opacity: 0;
+      animation: fadeInUp 1s ease-out 0.2s forwards;
+    }
+    
+    .hero-cta {
+      opacity: 0;
+      animation: fadeInUp 1s ease-out 0.4s forwards;
+    }
+  }
+  
+  .features-section {
+    padding: 5rem 0;
+    
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    
+    .feature-item {
+      text-align: center;
+      padding: 2rem;
+      border-radius: $border-radius-md;
+      transition: $transition-smooth;
+      
+      &:hover {
+        transform: translateY(-10px);
+      }
+      
+      .feature-icon {
+        font-size: 3rem;
+        color: $accent-color;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

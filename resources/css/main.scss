@@ -1,6 +1,12 @@
+// Core styles
 @use 'partials/variables';
 @use 'partials/base';
-@use 'partials/animations';
-@use 'partials/components';
+@use 'partials/layout';
+@use 'partials/utilities';
 
-// Any additional imports would go here
+// Component styles
+@use 'partials/components';
+@use 'partials/animations';
+
+// WordPress/Legacy cleanup (if needed)
+@use 'partials/wordpress-overrides';
