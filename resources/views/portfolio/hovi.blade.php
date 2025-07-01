@@ -93,9 +93,6 @@
             </div>
         </div>
     </div>
-</article>
-
-@endsection
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
                     <p class="text-p  no-margin " data-animate="true" data-animation="wordsUp" data-settings="{duration=1.5;delay=0;stagger=0.1;pin=;pinTarget=;scrub=;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}"> 2024 </p>

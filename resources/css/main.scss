@@ -11,3 +11,6 @@
 
 // WordPress/Legacy cleanup (if needed)
 @use 'partials/wordpress-overrides';
+
+// Page transitions (must come after @use rules)
+@import 'barba-transitions.css';

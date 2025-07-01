@@ -28,6 +28,7 @@ class PortfolioController extends Controller
         
         return view('portfolio.index', [
             'items' => $projects,
+            'namespace' => 'portfolio', // Add namespace for Barba.js
             'structuredData' => $this->performanceService->getStructuredData(),
             'criticalResources' => $this->performanceService->getCriticalResources()
         ]);
@@ -75,6 +76,7 @@ class PortfolioController extends Controller
             'nextProject' => $nextProject,
             'prevProject' => $prevProject,
             'currentProject' => $project,
+            'namespace' => 'project', // Add namespace for Barba.js
             'metaData' => $this->performanceService->getPortfolioMetaData($project),
             'structuredData' => $this->performanceService->getStructuredData($project),
             'criticalResources' => $this->performanceService->getCriticalResources()
