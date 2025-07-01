@@ -9,7 +9,42 @@
     <link rel="alternate" type="application/rss+xml" title="Charbel &raquo; Comments Feed" href="{{ asset("/comments/feed/index.rss") }}" />
     <link rel="stylesheet" id="plugins-css" href="{{ asset("/wp-content/themes/leksa/css/plugins%EF%B9%96ver=6.5.3.css") }}" media="all" />
     <link rel="stylesheet" id="style-css" href="{{ asset("/wp-content/themes/leksa/style%EF%B9%96ver=6.5.3.css") }}" media="all" />
-    @vite('resources/css/main.scss')
+    @vite(['resources/css/main.scss', 'resources/js/app.js'])
+    
+    {{-- IMMEDIATE CONTENT HIDING - Must run before any other scripts --}}
+    <style id="immediate-hide">
+        /* Hide everything until scripts are ready */
+        [data-barba="container"],
+        .site-main,
+        main,
+        #primary,
+        .hero-section,
+        .hero-image,
+        .portfolio-hero,
+        .project-hero {
+            opacity: 0 !important;
+            visibility: hidden !important;
+        }
+        
+        /* Also hide hero images specifically */
+        .hero-section img,
+        .hero-image img,
+        .portfolio-hero img,
+        .project-hero img,
+        .hero-section picture,
+        .hero-image picture,
+        .portfolio-hero picture,
+        .project-hero picture,
+        .hero-section video,
+        .hero-image video {
+            opacity: 0 !important;
+            visibility: hidden !important;
+        }
+    </style>
+    
+    {{-- Ultra Emergency Content Reveal Script - Must run immediately after CSS --}}
+    <script>{!! file_get_contents(resource_path('js/ultra-emergency-reveal.js')) !!}</script>
+    
     <style id="classic-theme-styles-inline-css">
       /*! This file is auto-generated */
       .wp-block-button__link {

@@ -18,32 +18,223 @@ class PageTransitionManager {
         this.preloadedPages = new Map();
         this.maxPreloadedPages = 3;
         
+        // Prevent FOUC by hiding content initially
+        this.preventFlash();
+        
         this.init();
+    }
+
+    preventFlash() {
+        // Add CSS to prevent flash of unstyled content
+        const style = document.createElement('style');
+        style.textContent = `
+            /* AGGRESSIVE CONTENT HIDING - Hide everything by default */
+            [data-barba="container"] {
+                opacity: 0 !important;
+                visibility: hidden !important;
+                transition: none;
+                will-change: opacity, transform;
+                backface-visibility: hidden;
+                transform: translateZ(0);
+            }
+            
+            /* Hide ALL content inside containers including hero images */
+            [data-barba="container"] *,
+            [data-barba="container"] img,
+            [data-barba="container"] picture,
+            [data-barba="container"] video,
+            .hero-section,
+            .hero-image,
+            .portfolio-hero,
+            .project-hero {
+                opacity: 0 !important;
+                visibility: hidden !important;
+            }
+            
+            .barba-ready [data-barba="container"],
+            .barba-initialized [data-barba="container"] {
+                opacity: 1 !important;
+                visibility: visible !important;
+                transition: opacity 0.3s ease-in-out;
+            }
+            
+            .barba-ready [data-barba="container"] *,
+            .barba-initialized [data-barba="container"] *,
+            .barba-ready [data-barba="container"] img,
+            .barba-initialized [data-barba="container"] img,
+            .barba-ready [data-barba="container"] picture,
+            .barba-initialized [data-barba="container"] picture,
+            .barba-ready [data-barba="container"] video,
+            .barba-initialized [data-barba="container"] video,
+            .barba-ready .hero-section,
+            .barba-initialized .hero-section,
+            .barba-ready .hero-image,
+            .barba-initialized .hero-image,
+            .barba-ready .portfolio-hero,
+            .barba-initialized .portfolio-hero,
+            .barba-ready .project-hero,
+            .barba-initialized .project-hero {
+                opacity: 1 !important;
+                visibility: visible !important;
+            }
+            
+            .is-transitioning [data-barba="container"] {
+                pointer-events: none;
+            }
+
+            .transition-overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9));
+                z-index: 999999;
+                opacity: 0;
+                pointer-events: none;
+                transition: opacity 0.4s ease;
+                backdrop-filter: blur(8px);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .transition-overlay::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 40px;
+                height: 40px;
+                border: 2px solid rgba(255, 255, 255, 0.3);
+                border-top: 2px solid rgba(255, 255, 255, 0.8);
+                border-radius: 50%;
+                transform: translate(-50%, -50%);
+                animation: spin 1s linear infinite;
+            }
+
+            @keyframes spin {
+                0% { transform: translate(-50%, -50%) rotate(0deg); }
+                100% { transform: translate(-50%, -50%) rotate(360deg); }
+            }
+
+            .is-transitioning .transition-overlay {
+                opacity: 1;
+                pointer-events: auto;
+            }
+            
+            /* CRITICAL: Force hide new content during transition */
+            .is-transitioning [data-barba="container"]:not(.barba-current),
+            .is-transitioning [data-barba="container"]:not(.barba-current) *,
+            .is-transitioning [data-barba="container"]:not(.barba-current) img,
+            .is-transitioning [data-barba="container"]:not(.barba-current) picture,
+            .is-transitioning [data-barba="container"]:not(.barba-current) video {
+                opacity: 0 !important;
+                visibility: hidden !important;
+                z-index: -1 !important;
+            }
+        `;
+        document.head.appendChild(style);
+        
+        // Add transition overlay to body
+        const overlay = document.createElement('div');
+        overlay.className = 'transition-overlay';
+        overlay.innerHTML = '<div class="transition-spinner"></div>';
+        document.body.appendChild(overlay);
+        
+        // Mark as ready after ensuring styles are applied
+        requestAnimationFrame(() => {
+            requestAnimationFrame(() => {
+                document.documentElement.classList.add('barba-ready');
+            });
+        });
+        
+        // Failsafe: Always reveal content after 2 seconds maximum
+        setTimeout(() => {
+            const containers = document.querySelectorAll('[data-barba="container"]');
+            containers.forEach(container => {
+                if (container.style.opacity === '0' || getComputedStyle(container).opacity === '0') {
+                    console.warn('⚠️ Force revealing hidden content (failsafe)');
+                    container.style.opacity = '1';
+                    container.style.transition = 'opacity 0.3s ease-in-out';
+                }
+            });
+            document.documentElement.classList.add('barba-ready', 'barba-initialized');
+        }, 2000);
     }
 
     init() {
         if (this.isInitialized) return;
         
-        // Initialize Barba.js with optimized settings
-        barba.init({
-            timeout: 10000,
-            cacheIgnore: ['/wp-admin/', '/wp-login.php'],
-            debug: process.env.NODE_ENV === 'development',
-            preventRunning: true,
-            sync: true,
-            transitions: [
-                this.createDefaultTransition(),
-                this.createProjectTransition(),
-                this.createPortfolioTransition()
-            ]
-        });
-
-        this.setupHooks();
-        this.setupPreventElements();
-        this.optimizeScrollBehavior();
+        // Wait for DOM to be ready before initializing Barba.js
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', () => {
+                this.initializeBarba();
+            });
+        } else {
+            this.initializeBarba();
+        }
         
         this.isInitialized = true;
         console.log('PageTransitionManager initialized with Barba.js');
+    }
+
+    initializeBarba() {
+        // Check if container exists before initializing
+        const barbaContainer = document.querySelector('[data-barba="container"]');
+        if (!barbaContainer) {
+            console.warn('Barba container not found. Revealing content anyway.');
+            this.revealContent();
+            return;
+        }
+
+        try {
+            // Initialize Barba.js with optimized settings
+            barba.init({
+                timeout: 10000,
+                cacheIgnore: ['/wp-admin/', '/wp-login.php'],
+                debug: process.env.NODE_ENV === 'development',
+                preventRunning: true,
+                sync: true,
+                transitions: [
+                    this.createDefaultTransition(),
+                    this.createProjectTransition(),
+                    this.createPortfolioTransition()
+                ]
+            });
+
+            this.setupHooks();
+            this.setupPreventElements();
+            this.optimizeScrollBehavior();
+            
+            // Show content now that Barba.js is ready
+            this.revealContent();
+            
+            console.log('🚀 Barba.js initialized successfully');
+        } catch (error) {
+            console.error('❌ Barba.js initialization failed:', error);
+            // Fallback: reveal content anyway
+            this.revealContent();
+        }
+    }
+
+    revealContent() {
+        // Smoothly reveal the content
+        requestAnimationFrame(() => {
+            document.documentElement.classList.add('barba-initialized');
+            
+            // Force reveal all containers
+            const containers = document.querySelectorAll('[data-barba="container"]');
+            containers.forEach(container => {
+                container.style.opacity = '1';
+                container.style.transition = 'opacity 0.3s ease-in-out';
+            });
+            
+            // Also ensure body content is visible
+            document.body.style.opacity = '1';
+            
+            console.log('✅ Content revealed - Barba.js ready');
+        });
     }
 
     createDefaultTransition() {
@@ -83,19 +274,39 @@ class PageTransitionManager {
     performLeaveTransition(data) {
         return new Promise((resolve) => {
             this.isTransitioning = true;
+            document.body.classList.add('is-transitioning');
+            
+            // CRITICAL: Hide the destination page immediately to prevent bleeding through
+            if (data.next && data.next.container) {
+                gsap.set(data.next.container, {
+                    opacity: 0,
+                    visibility: 'hidden',
+                    zIndex: -1,
+                    position: 'absolute',
+                    pointerEvents: 'none'
+                });
+            }
+            
+            // Set current page layering
+            gsap.set(data.current.container, {
+                zIndex: 10,
+                position: 'relative',
+                opacity: 1
+            });
             
             const tl = gsap.timeline({
                 onComplete: () => {
                     this.cleanupCurrentPage();
+                    console.log('🎬 Leave transition complete');
                     resolve();
                 }
             });
 
-            // Fade out current content with optimized timing
+            // Smooth fade out with slight scale for depth
             tl.to(data.current.container, {
                 opacity: 0,
-                y: -50,
-                duration: this.transitionDuration * 0.6,
+                scale: 0.95,
+                duration: this.transitionDuration * 0.5,
                 ease: "power2.inOut"
             });
 
@@ -103,7 +314,7 @@ class PageTransitionManager {
             if (this.threeJSManager) {
                 tl.to(this.threeJSManager.renderer.domElement, {
                     opacity: 0,
-                    scale: 0.9,
+                    scale: 0.95,
                     duration: this.transitionDuration * 0.4,
                     ease: "power2.out"
                 }, 0);
@@ -116,26 +327,42 @@ class PageTransitionManager {
 
     performEnterTransition(data) {
         return new Promise((resolve) => {
-            // Set initial state for new content
+            console.log('🎬 Starting enter transition');
+            
+            // CRITICAL: Keep new content completely hidden until we're ready
             gsap.set(data.next.container, {
                 opacity: 0,
-                y: 50
+                scale: 1.05,
+                zIndex: 1,
+                position: 'relative',
+                visibility: 'visible',
+                pointerEvents: 'auto'
             });
 
             const tl = gsap.timeline({
                 onComplete: () => {
+                    // Reset positioning after transition
+                    gsap.set(data.next.container, {
+                        zIndex: 'auto',
+                        position: 'static',
+                        scale: 1,
+                        clearProps: 'all'
+                    });
+                    
+                    document.body.classList.remove('is-transitioning');
                     this.isTransitioning = false;
+                    console.log('🎬 Enter transition complete');
                     resolve();
                 }
             });
 
-            // Animate in new content
+            // IMPORTANT: Add a longer delay to ensure leave transition is completely done
             tl.to(data.next.container, {
                 opacity: 1,
-                y: 0,
-                duration: this.transitionDuration * 0.7,
+                scale: 1,
+                duration: this.transitionDuration * 0.6,
                 ease: "power2.out",
-                delay: this.transitionDuration * 0.3
+                delay: this.transitionDuration * 0.4  // Increased delay
             });
 
             // Reinitialize Three.js if needed
@@ -344,6 +571,19 @@ class PageTransitionManager {
     }
 
     beforeEnterHook(data) {
+        console.log('🎬 Before enter hook - preparing new page');
+        
+        // CRITICAL: Ensure new content is completely hidden
+        if (data.next && data.next.container) {
+            gsap.set(data.next.container, {
+                opacity: 0,
+                visibility: 'hidden',
+                zIndex: -1,
+                position: 'absolute',
+                pointerEvents: 'none'
+            });
+        }
+        
         // Scroll to top optimized for performance
         if (window.scrollTo) {
             window.scrollTo(0, 0);
@@ -351,13 +591,38 @@ class PageTransitionManager {
         
         // Update current namespace
         this.currentNamespace = data.next.namespace;
+        
+        // Update body classes for new page
+        this.updateBodyClasses(data);
     }
 
     afterEnterHook(data) {
+        console.log('🎬 After enter hook - finalizing page');
+        
+        // Mark transition as complete
+        document.body.classList.add('transition-complete');
+        
+        // Ensure new content is fully visible and interactive
+        if (data.current && data.current.container) {
+            gsap.set(data.current.container, {
+                opacity: 1,
+                visibility: 'visible',
+                zIndex: 'auto',
+                position: 'static',
+                pointerEvents: 'auto',
+                clearProps: 'all'
+            });
+        }
+        
         // Reinitialize page-specific functionality
         this.reinitializePageScripts();
         this.updatePageTitle(data);
         this.trackPageView(data);
+        
+        // Clean up transition classes
+        setTimeout(() => {
+            document.body.classList.remove('transition-complete');
+        }, 100);
     }
 
     reinitializeThreeJS(namespace, timeline) {

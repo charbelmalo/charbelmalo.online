@@ -11,7 +11,7 @@
             @include('component.navigation')
             
             <div id="smooth-content">
-                <main id="primary" class="site-main" data-barba="container" data-barba-namespace="{{ $namespace ?? 'default' }}">
+                <main id="primary" class="site-main" data-barba="container" data-barba-namespace="{{ $namespace ?? 'default' }}" style="opacity: 0; visibility: hidden;">
                     @yield('content')
                 </main>
                 

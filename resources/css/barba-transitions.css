@@ -3,15 +3,48 @@
  * Performance-focused CSS for smooth page transitions
  */
 
-/* Base transition states */
+/* Prevent flash of unstyled content - STRENGTHENED */
 [data-barba="container"] {
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transition: none;
+    will-change: opacity, transform;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+}
+
+/* Hide ALL content inside containers by default */
+[data-barba="container"] * {
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+/* Show content when Barba.js is ready */
+.barba-ready [data-barba="container"],
+.barba-initialized [data-barba="container"] {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.barba-ready [data-barba="container"] *,
+.barba-initialized [data-barba="container"] * {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Fallback: Ensure content is always visible after 4 seconds */
+body:not(.page-loading) [data-barba="container"] {
+    animation: forceVisible 0.1s ease-in-out 4s forwards;
+}
+
+@keyframes forceVisible {
+    to { opacity: 1 !important; }
 }
 
 /* Loading states */
 .is-transitioning {
     overflow: hidden;
-    cursor: wait;
 }
 
 .is-transitioning * {
@@ -27,31 +60,56 @@
     background: var(--background-color, #ffffff);
 }
 
-/* Default transition states */
-.barba-leave {
+/* Optimized transition states - CRITICAL for preventing content bleeding */
+.barba-leave,
+.barba-enter {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 2;
+    will-change: transform, opacity;
+    backface-visibility: hidden;
+    transform: translateZ(0);
 }
 
-.barba-leave-active {
-    opacity: 0;
-    transform: translateY(-50px);
-    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+.barba-leave {
+    z-index: 10; /* Higher z-index for leaving page */
+    position: relative; /* Keep in normal flow during leave */
 }
 
 .barba-enter {
+    z-index: 1; /* Lower z-index for entering page */
+    opacity: 0; /* Always hidden initially */
+    visibility: hidden; /* Extra hiding */
+    pointer-events: none; /* No interaction during transition */
+}
+
+/* Ensure new content stays hidden during transitions */
+.is-transitioning .barba-enter {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+}
+
+/* Only show new content when transition is complete */
+.is-transitioning.transition-complete .barba-enter {
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+}
+
+/* Smooth default transitions */
+.barba-leave-active {
     opacity: 0;
-    transform: translateY(50px);
+    transform: scale(0.95) translateZ(0);
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
 }
 
 .barba-enter-active {
     opacity: 1;
-    transform: translateY(0);
-    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
-    transition-delay: 0.3s;
+    transform: scale(1) translateZ(0);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    transition-delay: 0.2s;
 }
 
 /* Project transition styles */

@@ -4,6 +4,7 @@
  */
 import PageTransitionManager from './page-transition-manager.js';
 import BarbaPerformanceMonitor from './barba-performance-monitor.js';
+import BarbaDebugHelper from './barba-debug-helper.js';
 
 class ApplicationManager {
     constructor() {
@@ -11,6 +12,7 @@ class ApplicationManager {
         this.threeJSManager = null;
         this.shaderManager = null;
         this.performanceMonitor = null;
+        this.debugHelper = null;
         this.isInitialized = false;
         
         this.init();
@@ -20,18 +22,21 @@ class ApplicationManager {
         if (this.isInitialized) return;
 
         try {
-            // Wait for DOM to be ready
+            // Initialize page transitions FIRST to prevent flash
+            await this.initializePageTransitionManager();
+            
+            // Wait for DOM to be ready for other managers
             if (document.readyState === 'loading') {
                 await new Promise(resolve => {
                     document.addEventListener('DOMContentLoaded', resolve);
                 });
             }
 
-            // Initialize managers in optimal order
+            // Initialize other managers in optimal order
             await this.initializeShaderManager();
             await this.initializeThreeJSManager();
-            await this.initializePageTransitionManager();
             await this.initializePerformanceMonitor();
+            await this.initializeDebugHelper();
             
             // Connect managers for seamless integration
             this.connectManagers();
@@ -62,21 +67,58 @@ class ApplicationManager {
     }
 
     async initializePageTransitionManager() {
-        // Only initialize if we have the required container
-        const barbaContainer = document.querySelector('[data-barba="container"]');
-        if (!barbaContainer) {
-            console.warn('Barba container not found. Page transitions disabled.');
-            return;
-        }
-
+        // Initialize immediately to prevent FOUC, even if DOM isn't ready
         this.pageTransitionManager = new PageTransitionManager();
-        console.log('Page Transition Manager initialized');
+        console.log('Page Transition Manager initialized early');
+        
+        // Additional failsafe for content visibility
+        this.ensureContentVisibility();
+    }
+
+    ensureContentVisibility() {
+        // Ultra-safe content reveal mechanism
+        const checkAndReveal = () => {
+            const containers = document.querySelectorAll('[data-barba="container"]');
+            let hiddenContainers = 0;
+            
+            containers.forEach(container => {
+                const computedStyle = getComputedStyle(container);
+                if (computedStyle.opacity === '0' || container.style.opacity === '0') {
+                    hiddenContainers++;
+                }
+            });
+            
+            if (hiddenContainers > 0) {
+                console.log(`🔍 Found ${hiddenContainers} hidden containers, revealing...`);
+                containers.forEach(container => {
+                    container.style.opacity = '1';
+                    container.style.transition = 'opacity 0.3s ease-in-out';
+                });
+                document.documentElement.classList.add('barba-ready', 'barba-initialized');
+            }
+        };
+        
+        // Check immediately
+        setTimeout(checkAndReveal, 100);
+        
+        // Check again after 1 second as backup
+        setTimeout(checkAndReveal, 1000);
+        
+        // Final check after 3 seconds
+        setTimeout(checkAndReveal, 3000);
     }
 
     async initializePerformanceMonitor() {
         if (process.env.NODE_ENV === 'development') {
             this.performanceMonitor = new BarbaPerformanceMonitor();
             console.log('Performance Monitor initialized');
+        }
+    }
+
+    async initializeDebugHelper() {
+        if (process.env.NODE_ENV === 'development') {
+            this.debugHelper = new BarbaDebugHelper();
+            console.log('Debug Helper initialized');
         }
     }
 
