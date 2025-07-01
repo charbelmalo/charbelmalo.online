@@ -272,6 +272,9 @@ html {
     --secondaryColor: #858585;
     --mainBackground: #f0f0f0;
     --secondaryBackground: #dcdcdc;
+    --link-color: var(--mainColor);
+    --link-hover-color: var(--mainColor);
+  
 }
 
 .header--switched,
@@ -281,6 +284,9 @@ html {
     --secondaryColor: #858585;
     --mainBackground: #141414;
     --mainColor: #dddddd;
+     --link-color: var(--mainColor);
+    --link-hover-color: var(--mainColor);
+  
 }
 
 .layout--switched .main-img,

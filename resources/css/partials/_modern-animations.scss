@@ -20,43 +20,19 @@
 
 // Performance-optimized sparkle animation
 .sparkle {
+    -webkit-background-clip: text;
+    background-clip: text;
   position: relative;
   overflow: hidden;
   transition: 
     transform var(--animation-duration-normal) var(--ease-out-expo),
     filter var(--animation-duration-normal) var(--ease-out-expo);
   
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(
-      45deg,
-      transparent 30%,
-      rgba(255, 255, 255, 0.3) 50%,
-      transparent 70%
-    );
-    background-size: 200% 200%;
-    opacity: var(--sparkle-opacity);
-    transform: scale(var(--sparkle-scale));
-    filter: blur(var(--sparkle-blur));
-    will-change: opacity, transform, filter;
-    pointer-events: none;
+ 
+
+
   }
 
-  &.animate-sparkle {
-    --sparkle-opacity: 1;
-    --sparkle-scale: 1;
-    --sparkle-blur: 0px;
-    
-    &::before {
-      animation: sparkle-sweep var(--animation-duration-extra-slow) var(--ease-out-expo) infinite;
-    }
-  }
-}
 
 // Optimized rainbow animations with CSS custom properties
 @property --rainbow-hue {

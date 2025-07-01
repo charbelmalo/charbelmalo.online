@@ -41,18 +41,9 @@
 
 /* Main content */
 .main-content {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
 
-/* Footer */
-.site-footer {
-  background-color: $primary-color;
-  color: $secondary-color;
-  padding: 2rem 1rem;
-  margin-top: auto;
-}
+
 
 /* Grid system */
 .grid {
