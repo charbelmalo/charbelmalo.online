@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\View;
 use App\Services\PerformanceOptimizationService;
+use App\Models\PortfolioProject;
 
 class PortfolioController extends Controller
 {
@@ -15,21 +16,18 @@ class PortfolioController extends Controller
         $this->performanceService = $performanceService;
     }
 
-    // Define portfolio items with their metadata
-    private function getPortfolioItems(): array
-    {
-        return $this->performanceService->getCachedPortfolioItems();
-    }
-
     /**
      * Display the portfolio index
      */
     public function index()
     {
-        $items = $this->getPortfolioItems();
+        $projects = PortfolioProject::active()
+            ->ordered()
+            ->with([])
+            ->get();
         
         return view('portfolio.index', [
-            'items' => $items,
+            'items' => $projects,
             'structuredData' => $this->performanceService->getStructuredData(),
             'criticalResources' => $this->performanceService->getCriticalResources()
         ]);
@@ -49,18 +47,33 @@ class PortfolioController extends Controller
             abort(404, 'Portfolio project not specified');
         }
         
-        $items = $this->getPortfolioItems();
+        $currentProject = PortfolioProject::active()
+            ->where('slug', $project)
+            ->first();
         
-        if (!isset($items[$project])) {
+        if (!$currentProject) {
             abort(404, "Portfolio project '{$project}' not found");
         }
 
-        $item = $items[$project];
+        // Get next and previous projects based on sort order
+        $nextProject = PortfolioProject::active()
+            ->where('sort_order', '>', $currentProject->sort_order)
+            ->orderBy('sort_order', 'asc')
+            ->first();
+            
+        $prevProject = PortfolioProject::active()
+            ->where('sort_order', '<', $currentProject->sort_order)
+            ->orderBy('sort_order', 'desc')
+            ->first();
+
+        // Determine the view template (use existing blade files)
+        $viewTemplate = $this->getProjectViewTemplate($project);
         
-        return view($item['view'], [
-            'title' => $item['title'],
-            'nextProject' => isset($items[$item['next']]) ? array_merge(['id' => $item['next']], $items[$item['next']]) : null,
-            'prevProject' => isset($items[$item['prev']]) ? array_merge(['id' => $item['prev']], $items[$item['prev']]) : null,
+        return view($viewTemplate, [
+            'project' => $currentProject,
+            'title' => $currentProject->title,
+            'nextProject' => $nextProject,
+            'prevProject' => $prevProject,
             'currentProject' => $project,
             'metaData' => $this->performanceService->getPortfolioMetaData($project),
             'structuredData' => $this->performanceService->getStructuredData($project),
@@ -69,31 +82,46 @@ class PortfolioController extends Controller
     }
 
     /**
+     * Get the appropriate view template for a project
+     */
+    private function getProjectViewTemplate(string $slug): string
+    {
+        $specificView = "portfolio.{$slug}";
+        
+        // Check if specific view exists, otherwise use generic template
+        if (View::exists($specificView)) {
+            return $specificView;
+        }
+        
+        return 'portfolio.project'; // Generic project template
+    }
+
+    /**
      * API endpoint for portfolio data
      */
     public function apiIndex()
     {
-        $items = $this->getPortfolioItems();
-        
-        $formattedItems = collect($items)->map(function($item, $key) {
-            return [
-                'id' => $key,
-                'title' => $item['title'],
-                'description' => $item['description'],
-                'technologies' => $item['technologies'],
-                'featured_image' => $item['featured_image'],
-                'url' => route('portfolio.' . $key),
-                'view' => $item['view'],
-                'navigation' => [
-                    'next' => $item['next'],
-                    'prev' => $item['prev']
-                ]
-            ];
-        })->values();
+        $projects = PortfolioProject::active()
+            ->ordered()
+            ->get()
+            ->map(function($project) {
+                return [
+                    'id' => $project->slug,
+                    'title' => $project->title,
+                    'description' => $project->description,
+                    'technologies' => $project->technologies_array,
+                    'featured_image' => $project->featured_image,
+                    'category' => $project->category,
+                    'url' => route('portfolio.' . $project->slug),
+                    'is_featured' => $project->is_featured,
+                    'project_date' => $project->project_date?->format('Y-m-d'),
+                    'meta_data' => $project->meta_data
+                ];
+            });
 
         return response()->json([
-            'items' => $formattedItems,
-            'total' => count($items)
+            'items' => $projects,
+            'total' => $projects->count()
         ]);
     }
 
@@ -102,26 +130,65 @@ class PortfolioController extends Controller
      */
     public function getNavigation(string $project)
     {
-        $items = $this->getPortfolioItems();
+        $currentProject = PortfolioProject::active()
+            ->where('slug', $project)
+            ->first();
         
-        if (!isset($items[$project])) {
+        if (!$currentProject) {
             abort(404);
         }
 
-        $item = $items[$project];
+        $nextProject = PortfolioProject::active()
+            ->where('sort_order', '>', $currentProject->sort_order)
+            ->orderBy('sort_order', 'asc')
+            ->first();
+            
+        $prevProject = PortfolioProject::active()
+            ->where('sort_order', '<', $currentProject->sort_order)
+            ->orderBy('sort_order', 'desc')
+            ->first();
         
         return response()->json([
             'current' => $project,
-            'next' => $item['next'] ? [
-                'id' => $item['next'],
-                'title' => $items[$item['next']]['title'],
-                'url' => route('portfolio.' . $item['next'])
+            'next' => $nextProject ? [
+                'id' => $nextProject->slug,
+                'title' => $nextProject->title,
+                'url' => route('portfolio.' . $nextProject->slug)
             ] : null,
-            'prev' => $item['prev'] ? [
-                'id' => $item['prev'],
-                'title' => $items[$item['prev']]['title'],
-                'url' => route('portfolio.' . $item['prev'])
+            'prev' => $prevProject ? [
+                'id' => $prevProject->slug,
+                'title' => $prevProject->title,
+                'url' => route('portfolio.' . $prevProject->slug)
             ] : null
+        ]);
+    }
+
+    /**
+     * API endpoint for featured portfolio items
+     */
+    public function apiFeatured()
+    {
+        $projects = PortfolioProject::active()
+            ->featured()
+            ->ordered()
+            ->limit(6)
+            ->get()
+            ->map(function($project) {
+                return [
+                    'id' => $project->slug,
+                    'title' => $project->title,
+                    'description' => $project->description,
+                    'technologies' => $project->technologies_array,
+                    'featured_image' => $project->featured_image,
+                    'category' => $project->category,
+                    'url' => route('portfolio.' . $project->slug),
+                    'project_date' => $project->project_date?->format('Y-m-d')
+                ];
+            });
+
+        return response()->json([
+            'items' => $projects,
+            'total' => $projects->count()
         ]);
     }
 }

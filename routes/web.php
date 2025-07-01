@@ -39,6 +39,7 @@ Route::prefix('portfolio')->name('portfolio.')->group(function () {
 // API routes
 Route::prefix('api/portfolio')->name('api.portfolio.')->group(function () {
     Route::get('/', [PortfolioController::class, 'apiIndex'])->name('index');
+    Route::get('/featured', [PortfolioController::class, 'apiFeatured'])->name('featured');
     Route::get('/{project}/navigation', [PortfolioController::class, 'getNavigation'])->name('navigation');
 });
 

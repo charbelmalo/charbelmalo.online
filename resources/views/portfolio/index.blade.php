@@ -45,7 +45,7 @@
             
             <div class="hero-stats" data-animation="fade-in-up" data-delay="0.4">
                 <div class="stat-item sparkle">
-                    <span class="stat-number">{{ count($items ?? []) }}+</span>
+                    <span class="stat-number">{{ $items->count() }}+</span>
                     <span class="stat-label">Projects</span>
                 </div>
                 <div class="stat-item sparkle">
@@ -73,15 +73,19 @@
     {{-- Interactive Dashboard --}}
     <section class="dashboard-section">
         @include('components.portfolio-dashboard', [
-            'portfolioItems' => collect($items ?? [])->map(function($item, $key) {
-                return array_merge($item, [
-                    'id' => $key,
-                    'url' => route('portfolio.' . $key),
-                    'featured_image' => $item['featured_image'] ?? '/assets/img/projects/' . $key . '.jpg',
-                    'technologies' => $item['technologies'] ?? ['Laravel', 'Vue.js', 'MySQL'],
-                    'description' => $item['description'] ?? 'An innovative project showcasing modern web development practices.'
-                ]);
-            })->values()->toArray()
+            'portfolioItems' => $items->map(function($project) {
+                return [
+                    'id' => $project->slug,
+                    'title' => $project->title,
+                    'description' => $project->description,
+                    'url' => route('portfolio.' . $project->slug),
+                    'featured_image' => $project->featured_image,
+                    'technologies' => $project->technologies_array,
+                    'category' => $project->category,
+                    'is_featured' => $project->is_featured,
+                    'project_date' => $project->project_date?->format('Y-m-d')
+                ];
+            })->toArray()
         ])
     </section>
 
@@ -92,34 +96,33 @@
             <p class="section-subtitle">Highlighting the most impactful and innovative work</p>
             
             <div class="featured-grid">
-                @foreach(($items ?? []) as $key => $project)
-                    @if($loop->index < 4) {{-- Show only first 4 as featured --}}
-                        <article class="featured-card" 
-                                 data-animation="scale-in" 
-                                 data-delay="{{ $loop->index * 0.1 }}"
-                                 data-project="{{ $key }}">
+                @foreach($items->where('is_featured', true)->take(4) as $project)
+                    <article class="featured-card" 
+                             data-animation="scale-in" 
+                             data-delay="{{ $loop->index * 0.1 }}"
+                             data-project="{{ $project->slug }}">
+                        
+                        <div class="card-image-container">
+                            <img src="{{ $project->featured_image }}" 
+                                 alt="{{ $project->title }}"
+                                 class="card-image sparkle"
+                                 loading="lazy">
                             
-                            <div class="card-image-container">
-                                <img src="{{ $project['featured_image'] ?? '/assets/img/projects/' . $key . '.jpg' }}" 
-                                     alt="{{ $project['title'] }}"
-                                     class="card-image sparkle"
-                                     loading="lazy">
-                                
-                                <div class="card-overlay">
-                                    <div class="overlay-content">
-                                        <h3 class="project-title">{{ $project['title'] }}</h3>
-                                        <p class="project-description">
-                                            {{ $project['description'] ?? 'An innovative project showcasing modern development.' }}
-                                        </p>
-                                        
-                                        <div class="project-technologies">
-                                            @foreach($project['technologies'] ?? ['Web Dev', 'Design'] as $tech)
-                                                <span class="tech-badge">{{ $tech }}</span>
-                                            @endforeach
-                                        </div>
+                            <div class="card-overlay">
+                                <div class="overlay-content">
+                                    <h3 class="project-title">{{ $project->title }}</h3>
+                                    <p class="project-description">
+                                        {{ $project->description }}
+                                    </p>
+                                    
+                                    <div class="project-technologies">
+                                        @foreach($project->technologies_array as $tech)
+                                            <span class="tech-badge">{{ $tech }}</span>
+                                        @endforeach
+                                    </div>
                                         
                                         <div class="card-actions">
-                                            <a href="{{ route('portfolio.' . $key) }}" 
+                                            <a href="{{ route('portfolio.' . $project->slug) }}" 
                                                class="view-project-btn sparkle">
                                                 <span>View Project</span>
                                                 <svg viewBox="0 0 24 24" fill="none">
@@ -131,7 +134,6 @@
                                 </div>
                             </div>
                         </article>
-                    @endif
                 @endforeach
             </div>
         </div>
