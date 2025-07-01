@@ -427,9 +427,9 @@ document.body.className = c;
 <script src="{{asset("/wp-content/themes/leksa/js/barba.min%EF%B9%96ver=6.5.3.js")}}" id="barba-js"></script>
 <script src="{{asset("/wp-content/themes/leksa/js/plugins%EF%B9%96ver=6.5.3.js")}}" id="plugins-js"></script>
 <script src="{{asset("/wp-content/themes/leksa/js/scripts%EF%B9%96ver=6.5.3.js")}}" id="scripts-js"></script>
-<script src="{{asset("/wp-content/plugins/pe-core/assets/js/pe-text-animations%EF%B9%96ver=6.5.3.js")}}" id="pe-text-ans-js"></script>
-<script src="{{asset("/wp-content/plugins/pe-core/assets/js/pe-general-animations%EF%B9%96ver=6.5.3.js")}}" id="pe-general-ans-js"></script>
-<script src="{{asset("/wp-content/plugins/pe-core/assets/js/pe-image-animations%EF%B9%96ver=6.5.3.js")}}" id="pe-image-ans-js"></script>
+<script src="{{asset("/wp-content/plugins/pe-core/assets/js/pe-text-animations%EF%B9%96ver=6.6.js")}}" id="pe-text-ans-js"></script>
+<script src="{{asset("/wp-content/plugins/pe-core/assets/js/pe-general-animations%EF%B9%96ver=6.6.js")}}" id="pe-general-ans-js"></script>
+<script src="{{asset("/wp-content/plugins/pe-core/assets/js/pe-image-animations%EF%B9%96ver=6.6.js")}}" id="pe-image-ans-js"></script>
 <script src="{{asset("/wp-content/plugins/pe-core/assets/js/pe-video-player%EF%B9%96ver=6.5.3.js")}}" id="pe-video-player-js"></script>
 <script src="{{asset("/wp-content/plugins/pe-core/assets/js/pe-bulge-effect%EF%B9%96ver=6.5.3.js")}}" id="pe-bulge-effect-js"></script>
 <script src="{{asset("/wp-content/plugins/pe-core/assets/js/widget-scripts%EF%B9%96ver=6.5.3.js")}}" id="widget-scripts-js"></script>

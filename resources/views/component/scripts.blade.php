@@ -47,12 +47,12 @@
     <script src="{{ asset("/wp-content/themes/leksa/js/barba.min%EF%B9%96ver=6.5.3.js") }}" id="barba-js"></script>
     <script src="{{ asset("/wp-content/themes/leksa/js/plugins%EF%B9%96ver=6.5.3.js") }}" id="plugins-js"></script>
     <script src="{{ asset("/wp-content/themes/leksa/js/scripts%EF%B9%96ver=6.5.3.js") }}" id="scripts-js"></script>
-    <script src="{{ asset("/wp-content/plugins/pe-core/assets/js/pe-text-animations%EF%B9%96ver=6.5.3.js") }}" id="pe-text-ans-js"></script>
-    <script src="{{ asset("/wp-content/plugins/pe-core/assets/js/pe-general-animations%EF%B9%96ver=6.5.3.js") }}" id="pe-general-ans-js"></script>
-    <script src="{{ asset("/wp-content/plugins/pe-core/assets/js/pe-image-animations%EF%B9%96ver=6.5.3.js") }}" id="pe-image-ans-js"></script>
-    <script src="{{ asset("/wp-content/plugins/pe-core/assets/js/pe-video-player%EF%B9%96ver=6.5.3.js") }}" id="pe-video-player-js"></script>
-    <script src="{{ asset("/wp-content/plugins/pe-core/assets/js/pe-bulge-effect%EF%B9%96ver=6.5.3.js") }}" id="pe-bulge-effect-js"></script>
-    <script src="{{ asset("/wp-content/plugins/pe-core/assets/js/widget-scripts%EF%B9%96ver=6.5.3.js") }}" id="widget-scripts-js"></script>
+    <script src="{{ asset("/wp-content/plugins/pe-core/assets/js/pe-text-animations%EF%B9%96ver=6.6.js") }}" id="pe-text-ans-js"></script>
+    <script src="{{ asset("/wp-content/plugins/pe-core/assets/js/pe-general-animations%EF%B9%96ver=6.6.js") }}" id="pe-general-ans-js"></script>
+    <script src="{{ asset("/wp-content/plugins/pe-core/assets/js/pe-image-animations%EF%B9%96ver=6.6.js") }}" id="pe-image-ans-js"></script>
+    <script src="{{ asset("/wp-content/plugins/pe-core/assets/js/pe-video-player%EF%B9%96ver=6.6.js") }}" id="pe-video-player-js"></script>
+    <script src="{{ asset("/wp-content/plugins/pe-core/assets/js/pe-bulge-effect%EF%B9%96ver=6.6.js") }}" id="pe-bulge-effect-js"></script>
+    <script src="{{ asset("/wp-content/plugins/pe-core/assets/js/widget-scripts%EF%B9%96ver=6.6.js") }}" id="widget-scripts-js"></script>
     <script src="{{ asset("/wp-content/plugins/contact-form-7/includes/swv/js/index%EF%B9%96ver=5.9.4.js") }}" id="swv-js"></script>
     <script id="contact-form-7-js-extra">
       var wpcf7 = {
@@ -334,4 +334,46 @@
     <script src="{{ asset("/wp-content/plugins/elementor/assets/js/frontend.min%EF%B9%96ver=3.21.4.js") }}" id="elementor-frontend-js"></script>
     <script src="{{ asset("/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min%EF%B9%96ver=3.21.2.js") }}" id="pro-elements-handlers-js"></script>
     <script src="{{ asset("/assets/js/main.js") }}" id="custom-js"></script>
+    
+    <script>
+        // Debug script to check animation initialization
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('DOM Content Loaded - Checking for animation elements');
+            const animationElements = document.querySelectorAll('[data-animation="scale"]');
+            console.log('Found scale animation elements:', animationElements);
+            
+            animationElements.forEach((element, index) => {
+                console.log(`Element ${index}:`, element);
+                console.log('  - data-animation:', element.dataset.animation);
+                console.log('  - data-anim-image:', element.dataset.animImage);
+                console.log('  - data-settings:', element.dataset.settings);
+            });
+        });
+    </script>
+    
+    <script>
+    // Debug script to check animation elements state
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log('=== Animation Debug - DOMContentLoaded ===');
+        const animElements = document.querySelectorAll('[data-animation]');
+        animElements.forEach(el => {
+            console.log('Element:', el.dataset.animation, 'Classes on load:', el.className, 'Has viewport-enter:', el.classList.contains('viewport-enter'), 'Has anim_start:', el.classList.contains('anim_start'), 'Has in-view:', el.classList.contains('in-view'));
+        });
+        
+        // Check cursor elements
+        const cursorElements = document.querySelectorAll('[data-cursor="true"]');
+        console.log('=== Cursor Debug ===');
+        console.log('Found cursor elements:', cursorElements.length);
+        const mouseCursor = document.getElementById('mouseCursor');
+        console.log('Mouse cursor element:', mouseCursor);
+        
+        // Check again after a short delay to see if classes are added immediately
+        setTimeout(() => {
+            console.log('=== Animation Debug - After 1 second ===');
+            animElements.forEach(el => {
+                console.log('Element:', el.dataset.animation, 'Classes after delay:', el.className, 'Has viewport-enter:', el.classList.contains('viewport-enter'), 'Has anim_start:', el.classList.contains('anim_start'), 'Has in-view:', el.classList.contains('in-view'));
+            });
+        }, 1000);
+    });
+    </script>
     

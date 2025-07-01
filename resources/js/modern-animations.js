@@ -82,6 +82,7 @@ class AnimationManager {
                 element.classList.add('in-view');
                 break;
             case 'scale-in':
+            case 'scale':
                 element.classList.add('in-view');
                 break;
             case 'rainbow':
@@ -168,7 +169,7 @@ class AnimationManager {
         document.querySelectorAll('[data-animation]').forEach(element => {
             const animationType = element.dataset.animation;
             
-            if (['sparkle', 'fade-in-up', 'scale-in', 'rainbow'].includes(animationType)) {
+            if (['sparkle', 'fade-in-up', 'scale-in', 'scale', 'rainbow'].includes(animationType)) {
                 this.observers.get('scroll').observe(element);
             }
         });

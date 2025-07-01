@@ -1,9 +1,8 @@
 {{-- <div class="" style="position:relative">
     <div id="three-container" style="width:600px;height:600px; border-radius:300px; overflow:hidden; position:absolute;    right: calc(50% - 300px); bottom:-300px"></div>
 </div> --}}
-<footer id="colophon" class="site-footer  footer--overlay">
-    <div data-elementor-type="pe-footer" data-elementor-id="6175" class="elementor elementor-6175" data-elementor-post-type="elementor_library">
-    <div class="reverse--hold rh--top reverse__b6ab7a8"><span style="width:75px;height:75px" class="bg--reverse-layer rl-top rl-left"></span><span style="width:75px;height:75px" class="bg--reverse-layer rl-top rl-right"></span></div><div class="elementor-element elementor-element-b6ab7a8 e-con-full bg--color curved_true convert--none e-flex no e-con e-parent" data-id="b6ab7a8" data-element_type="container">
+<footer id="colophon" class="site-footer footer--overlay" data-elementor-type="pe-footer" data-elementor-id="6175" data-elementor-post-type="elementor_library">
+<div class="reverse--hold rh--top reverse__b6ab7a8"><span style="width:75px;height:75px" class="bg--reverse-layer rl-top rl-left"></span><span style="width:75px;height:75px" class="bg--reverse-layer rl-top rl-right"></span></div><div class="elementor-element elementor-element-b6ab7a8 e-con-full bg--color curved_true convert--none e-flex no e-con e-parent" data-id="b6ab7a8" data-element_type="container">
     <div class="elementor-element elementor-element-610a2a7 e-con-full convert--none e-flex bg--none no e-con e-child" data-id="610a2a7" data-element_type="container">
     <div class="elementor-element elementor-element-d7b116b e-con-full convert--none e-flex bg--none no e-con e-child" data-id="d7b116b" data-element_type="container">
     <div class="elementor-element elementor-element-ed1d227 elementor-widget__width-auto elementor-widget elementor-widget-petextwrapper" data-id="ed1d227" data-element_type="widget" data-widget_type="petextwrapper.default">
@@ -94,4 +93,4 @@
     </div>
     </div>
     </div>
-    </footer>
+</footer>
