@@ -22,6 +22,7 @@
     <div class="pe--button false pb--underlined false pb--icon icon__right pb--normal link">
     <div class="pe--button--wrapper">
     <a href="http://" rel="nofollow">
+       
     <span class="pb__main text-wrapper"><a href="mailto:charbel.malo@lau.edu">[charbel.malo@lau.edu]
          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" height="27" class="display-inline">
             <path d="M320 120v240c0 13.25-10.75 24-24 24s-24-10.75-24-24V177.9l-231 231C36.28 413.7 30.14 416 24 416s-12.28-2.344-16.97-7.031c-9.375-9.375-9.375-24.56 0-33.94L238.1 144H56C42.75 144 32 133.3 32 120S42.75 96 56 96h240C309.3 96 320 106.8 320 120z" fill="white" /></svg>

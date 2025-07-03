@@ -1,5 +1,4 @@
-
-    <script data-cfasync="false" src="{{ asset("cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js") }}"></script>
+<script data-cfasync="false" src="{{ asset("cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js") }}"></script>
     <script type="text/javascript">
       const lazyloadRunObserver = () => {
         const lazyloadBackgrounds = document.querySelectorAll(`.e-con.e-parent:not(.e-lazyloaded)`);
@@ -50,6 +49,8 @@
     <script src="{{ asset("/wp-content/plugins/pe-core/assets/js/pe-text-animations%EF%B9%96ver=6.5.3.js") }}" id="pe-text-ans-js"></script>
     <script src="{{ asset("/wp-content/plugins/pe-core/assets/js/pe-general-animations%EF%B9%96ver=6.5.3.js") }}" id="pe-general-ans-js"></script>
     <script src="{{ asset("/wp-content/plugins/pe-core/assets/js/pe-image-animations%EF%B9%96ver=6.5.3.js") }}" id="pe-image-ans-js"></script>
+    <!-- Animation fixes script - must load after animation classes but before widget-scripts -->
+    <script src="{{ asset("/js/animation-fixes.js") }}" id="animation-fixes-js"></script>
     <script src="{{ asset("/wp-content/plugins/pe-core/assets/js/pe-video-player%EF%B9%96ver=6.5.3.js") }}" id="pe-video-player-js"></script>
     <script src="{{ asset("/wp-content/plugins/pe-core/assets/js/pe-bulge-effect%EF%B9%96ver=6.5.3.js") }}" id="pe-bulge-effect-js"></script>
     <script src="{{ asset("/wp-content/plugins/pe-core/assets/js/widget-scripts%EF%B9%96ver=6.5.3.js") }}" id="widget-scripts-js"></script>
@@ -376,4 +377,3 @@
         }, 1000);
     });
     </script>
-    
