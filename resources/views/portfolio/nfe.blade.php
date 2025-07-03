@@ -193,7 +193,7 @@
               <div class="elementor-element elementor-element-349f62aa elementor-widget elementor-widget-petextwrapper" data-id="349f62aa" data-element_type="widget" data-widget_type="petextwrapper.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
-                    <p class="text-p p-large no-margin " data-animate="true" data-animation="linesUp" >Our design philosophy centers on creating intuitive experiences that empower business professionals to execute complex operations with confidence and precision across all organizational levels.</p>
+                    <p class="text-p p-large no-margin " data-animate="true" data-animation="linesUp" data-settings="{duration=1.5;delay=0;stagger=0.1;pin=false;pinTarget=;scrub=false;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}">Our design philosophy centers on creating intuitive experiences that empower business professionals to execute complex operations with confidence and precision across all organizational levels.</p>
                   </div>
                 </div>
               </div>

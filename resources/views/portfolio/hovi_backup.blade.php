@@ -69,7 +69,7 @@
       </div>
     </div>
     <div id="content" class="page-content project-page-content">
-      <div data-elementor-type="wp-post" data-elementor-id="9311" class="elementor elementor-9311" data-elementor-post-type="portfolio">
+      <div data-elementor-type="wp-post" data-elementor-id="9340" class="elementor elementor-9340" data-elementor-post-type="portfolio">
         <div class="elementor-element elementor-element-543e933e e-con-full convert--none e-flex bg--none no e-con e-parent" data-id="543e933e" data-element_type="container">
           <div class="elementor-element elementor-element-158ed4bc elementor-widget elementor-widget-pesingleimage" data-id="158ed4bc" data-element_type="widget" data-widget_type="pesingleimage.default">
             <div class="elementor-widget-container">
@@ -193,7 +193,7 @@
               <div class="elementor-element elementor-element-349f62aa elementor-widget elementor-widget-petextwrapper" data-id="349f62aa" data-element_type="widget" data-widget_type="petextwrapper.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
-                    <p class="text-p p-large no-margin " data-animate="true" data-animation="linesUp" >The service design focuses on creating scalable marketing solutions that adapt to diverse business needs, from startup ventures to established enterprises, ensuring every client receives tailored strategies that drive measurable growth.</p>
+                    <p class="text-p p-large no-margin " data-animate="true" data-animation="linesUp" data-settings="{duration=1.5;delay=0;stagger=0.1;pin=false;pinTarget=;scrub=false;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}">The service design focuses on creating scalable marketing solutions that adapt to diverse business needs, from startup ventures to established enterprises, ensuring every client receives tailored strategies that drive measurable growth.</p>
                   </div>
                 </div>
               </div>
@@ -409,7 +409,7 @@
       </div>
     </div>
     <div id="content" class="page-content project-page-content">
-      <div data-elementor-type="wp-post" data-elementor-id="9311" class="elementor elementor-9340" data-elementor-post-type="portfolio">
+      <div data-elementor-type="wp-post" data-elementor-id="9340" class="elementor elementor-9340" data-elementor-post-type="portfolio">
         <div class="elementor-element elementor-element-543e933e e-con-full convert--none e-flex bg--none no e-con e-parent" data-id="543e933e" data-element_type="container">
           <div class="elementor-element elementor-element-158ed4bc elementor-widget elementor-widget-pesingleimage" data-id="158ed4bc" data-element_type="widget" data-widget_type="pesingleimage.default">
             <div class="elementor-widget-container">

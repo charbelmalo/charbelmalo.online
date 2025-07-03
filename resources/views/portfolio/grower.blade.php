@@ -193,7 +193,7 @@
               <div class="elementor-element elementor-element-349f62aa elementor-widget elementor-widget-petextwrapper" data-id="349f62aa" data-element_type="widget" data-widget_type="petextwrapper.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
-                    <p class="text-p p-large no-margin " data-animate="true" data-animation="linesUp" >The UX focuses on creating a scalable design system that accommodates diverse user personas, from marketing managers to executives, ensuring accessibility and functionality across all levels of expertise.</p>
+                    <p class="text-p p-large no-margin " data-animate="true" data-animation="linesUp" data-settings="{duration=1.5;delay=0;stagger=0.1;pin=false;pinTarget=;scrub=false;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}">The UX focuses on creating a scalable design system that accommodates diverse user personas, from marketing managers to executives, ensuring accessibility and functionality across all levels of expertise.</p>
                   </div>
                 </div>
               </div>

@@ -4,7 +4,7 @@
 
 <article class="elementor-161 page type-page status-publish hentry"><div class="entry-content">
 
-<div class="project-page" style="max-width:                    <p class="text-p p-large  " data-animate="true" data-animation="linesUp" data-settings="{duration=1.5;delay=0;stagger=0.1;pin=false;pinTarget=;scrub=false;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}">Pellini Coffee represents over a century of Italian coffee mastery, translating traditional roasting expertise into a premium digital experience. The e-commerce platform elegantly showcases their artisanal products while providing seamless purchasing journeys for coffee connoisseurs worldwide. </p>1800px; margin:auto" data-elementor-type="wp-page" data-elementor-id="161" class="elementor elementor-161" data-elementor-post-type="page">
+<div class="project-page" style="max-width: 1800px; margin:auto" data-elementor-type="wp-page" data-elementor-id="161" class="elementor elementor-161" data-elementor-post-type="page">
     <div class="project-hero">
       <div data-elementor-type="project-hero" data-elementor-id="6855" class="elementor elementor-6855" data-elementor-post-type="elementor_library">
         <div class="elementor-element elementor-element-26b19ad e-con-full convert--none e-flex bg--none no e-con e-parent" data-id="26b19ad" data-element_type="container">
@@ -193,7 +193,7 @@
               <div class="elementor-element elementor-element-349f62aa elementor-widget elementor-widget-petextwrapper" data-id="349f62aa" data-element_type="widget" data-widget_type="petextwrapper.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
-                    <p class="text-p p-large no-margin " data-animate="true" data-animation="linesUp" >The design philosophy honors Pellini's heritage while embracing modern e-commerce standards, creating an immersive brand experience that educates customers about coffee culture and simplifies premium product discovery.</p>
+                    <p class="text-p p-large no-margin " data-animate="true" data-animation="linesUp" data-settings="{duration=1.5;delay=0;stagger=0.1;pin=false;pinTarget=;scrub=false;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}">The design philosophy honors Pellini's heritage while embracing modern e-commerce standards, creating an immersive brand experience that educates customers about coffee culture and simplifies premium product discovery.</p>
                   </div>
                 </div>
               </div>
