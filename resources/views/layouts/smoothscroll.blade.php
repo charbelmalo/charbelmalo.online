@@ -7,7 +7,7 @@
         <a class="skip-link screen-reader-text" href="{{ url("#primary") }}">Skip to content</a>
      @include('component.navigation')
         <div id="smooth-content">
-          <main id="primary" class="site-main" data-barba="container">
+          <main id="primary" class="site-main" data-barba="container" data-barba-namespace="homepage">
             <script type="module" src="https://unpkg.com/three@0.126.1/build/three.module.js"></script>
             @yield('content')
           </main>
