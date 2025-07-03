@@ -98,7 +98,7 @@
                   </div>
                 </div>
               </div>
-              <div class="elementor-element elementor-element-57f52b11 elementor-widget elementor-widget-petextwrapper" data-id="57f52b11" data-element_type="widget" data-widget_type="pettextwrapper.default">
+              <div class="elementor-element elementor-element-57f52b11 elementor-widget elementor-widget-petextwrapper" data-id="57f52b11" data-element_type="widget" data-widget_type="petextwrapper.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
                     <p class="text-p p-large  ">Premium Fashion Experience</p>
@@ -107,7 +107,7 @@
                 
               </div>
               <div class="elementor-element elementor-element-64fb4db e-con-full convert--none e-flex bg--none no e-con e-child" data-id="64fb4db" data-element_type="container">
-                <div class="elementor-element elementor-element-4c145c28 elementor-widget elementor-widget-pettextwrapper" data-id="4c145c28" data-element_type="widget" data-widget_type="pettextwrapper.default">
+                <div class="elementor-element elementor-element-4c145c28 elementor-widget elementor-widget-petextwrapper" data-id="4c145c28" data-element_type="widget" data-widget_type="petextwrapper.default">
                   <div class="elementor-widget-container">
                     <div class="text-wrapper">
                       <p class="text-p p-large  ">Understanding the modern gentleman's needs was essential for creating a brand that balances luxury with accessibility in high-quality menswear.</p>
@@ -176,21 +176,21 @@
               </div>
             </div>
             <div class="elementor-element elementor-element-592784e2 e-con-full convert--none e-flex bg--none no e-con e-child" data-id="592784e2" data-element_type="container">
-              <div class="elementor-element elementor-element-258c6fdb elementor-widget elementor-widget-petextwrapper" data-id="258c6fdb" data-element_type="widget" data-widget_type="pettextwrapper.default">
+              <div class="elementor-element elementor-element-258c6fdb elementor-widget elementor-widget-petextwrapper" data-id="258c6fdb" data-element_type="widget" data-widget_type="petextwrapper.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
                     <p class="text-h3  no-margin " data-animate="true" data-animation="wordsUp" data-settings="{duration=1.5;delay=0;stagger=0.04;pin=false;pinTarget=;scrub=false;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}"> The Fashion Innovation Behind <br>Pellini's Premium Experience </p>
                   </div>
                 </div>
               </div>
-              <div class="elementor-element elementor-element-5aac5bdc elementor-widget elementor-widget-pettextwrapper" data-id="5aac5bdc" data-element_type="widget" data-widget_type="pettextwrapper.default">
+              <div class="elementor-element elementor-element-5aac5bdc elementor-widget elementor-widget-petextwrapper" data-id="5aac5bdc" data-element_type="widget" data-widget_type="petextwrapper.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
                     <p class="text-p p-large  " data-animate="true" data-animation="linesUp" data-settings="{duration=1.5;delay=0;stagger=0.1;pin=false;pinTarget=;scrub=false;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}">Pellini stands at the intersection of traditional craftsmanship and modern fashion sensibilities. Our design approach emphasizes quality textiles, contemporary cuts, and accessible luxury that appeals to the discerning modern gentleman. </p>
                   </div>
                 </div>
               </div>
-              <div class="elementor-element elementor-element-349f62aa elementor-widget elementor-widget-pettextwrapper" data-id="349f62aa" data-element_type="widget" data-widget_type="pettextwrapper.default">
+              <div class="elementor-element elementor-element-349f62aa elementor-widget elementor-widget-petextwrapper" data-id="349f62aa" data-element_type="widget" data-widget_type="petextwrapper.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
                     <p class="text-p p-large no-margin " data-animate="true" data-animation="linesUp" >The brand experience focuses on creating a seamless journey from discovery to purchase, ensuring that every touchpoint reflects our commitment to quality and style while remaining approachable and inclusive.</p>
@@ -212,7 +212,7 @@
         <div class="elementor-element elementor-element-16c364b8 convert--none e-flex e-con-boxed bg--none no e-con e-parent" data-id="16c364b8" data-element_type="container">
           <div class="e-con-inner">
             <div class="elementor-element elementor-element-7cbf2ab6 e-con-full convert--none e-flex bg--none no e-con e-child" data-id="7cbf2ab6" data-element_type="container">
-              <div class="elementor-element elementor-element-36e512ce elementor-widget elementor-widget-petextwrapper" data-id="36e512ce" data-element_type="widget" data-widget_type="pettextwrapper.default">
+              <div class="elementor-element elementor-element-36e512ce elementor-widget elementor-widget-petextwrapper" data-id="36e512ce" data-element_type="widget" data-widget_type="petextwrapper.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
                     <p class="text-p p-large no-margin "> (02) <br>PROJECT GOALS </p>
@@ -224,7 +224,7 @@
               <div class="text-wrapper">
                 <p class="text-p p-large no-margin ">Define Premium Accessibility:</p>
               </div> 
-              <div class="elementor-element elementor-element-5277767b elementor-widget elementor-widget-pettextwrapper" data-id="5277767b" data-element_type="widget" data-widget_type="pettextwrapper.default">
+              <div class="elementor-element elementor-element-5277767b elementor-widget elementor-widget-petextwrapper" data-id="5277767b" data-element_type="widget" data-widget_type="petextwrapper.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
                     <p class="text-p p-large no-margin " data-animate="true" data-animation="wordsUp" data-settings="{duration=1.5;delay=0;stagger=0.02;pin=false;pinTarget=;scrub=false;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}">Create a luxury fashion experience that remains approachable and accessible without compromising on quality or style.</p>
@@ -236,7 +236,7 @@
               <div class="text-wrapper">
                 <p class="text-p p-large no-margin ">Establish Brand Authority:</p>
               </div>
-              <div class="elementor-element elementor-element-42c9049f elementor-widget elementor-widget-pettextwrapper" data-id="42c9049f" data-element_type="widget" data-widget_type="pettextwrapper.default">
+              <div class="elementor-element elementor-element-42c9049f elementor-widget elementor-widget-petextwrapper" data-id="42c9049f" data-element_type="widget" data-widget_type="petextwrapper.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
                     <p class="text-p p-large no-margin " data-animate="true" data-animation="wordsUp" data-settings="{duration=1.5;delay=0;stagger=0.02;pin=false;pinTarget=;scrub=false;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}">Position Pellini as a trusted name in men's fashion, known for quality fabrics and contemporary designs.</p>
@@ -258,7 +258,7 @@
         <div class="elementor-element elementor-element-1578a70c convert--none e-flex e-con-boxed bg--none no e-con e-parent" data-id="1578a70c" data-element_type="container">
           <div class="e-con-inner">
             <div class="elementor-element elementor-element-46ec33c1 e-con-full convert--none e-flex bg--none no e-con e-child" data-id="46ec33c1" data-element_type="container">
-              <div class="elementor-element elementor-element-7f35dd59 elementor-widget elementor-widget-petextwrapper" data-id="7f35dd59" data-element_type="widget" data-widget_type="pettextwrapper.default">
+              <div class="elementor-element elementor-element-7f35dd59 elementor-widget elementor-widget-petextwrapper" data-id="7f35dd59" data-element_type="widget" data-widget_type="petextwrapper.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
                     <p class="text-p p-large no-margin "> (03). <br>LEARNINGS </p>
@@ -267,14 +267,14 @@
               </div>
             </div>
             <div class="elementor-element elementor-element-2c631e37 e-con-full convert--none e-flex bg--none no e-con e-child" data-id="2c631e37" data-element_type="container">
-              <div class="elementor-element elementor-element-2fdfca57 elementor-widget elementor-widget-pettextwrapper" data-id="2fdfca57" data-element_type="widget" data-widget_type="pettextwrapper.default">
+              <div class="elementor-element elementor-element-2fdfca57 elementor-widget elementor-widget-petextwrapper" data-id="2fdfca57" data-element_type="widget" data-widget_type="petextwrapper.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
                     <p class="text-p p-large no-margin ">Quality Over Quantity</p>
                   </div>
                 </div>
               </div>
-              <div class="elementor-element elementor-element-52621eaa elementor-widget elementor-widget-pettextwrapper" data-id="52621eaa" data-element_type="widget" data-widget_type="pettextwrapper.default">
+              <div class="elementor-element elementor-element-52621eaa elementor-widget elementor-widget-petextwrapper" data-id="52621eaa" data-element_type="widget" data-widget_type="petextwrapper.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
                     <p class="text-p p-large  ">Focusing on superior materials and craftsmanship proved more valuable than offering an extensive but average product range.</p>
@@ -284,14 +284,14 @@
               
             </div>
             <div class="elementor-element elementor-element-2c631e37 e-con-full convert--none e-flex bg--none no e-con e-child" data-id="2c631e37" data-element_type="container">
-              <div class="elementor-element elementor-element-2fdfca57 elementor-widget elementor-widget-pettextwrapper" data-id="2fdfca57" data-element_type="widget" data-widget_type="pettextwrapper.default">
+              <div class="elementor-element elementor-element-2fdfca57 elementor-widget elementor-widget-petextwrapper" data-id="2fdfca57" data-element_type="widget" data-widget_type="petextwrapper.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
                     <p class="text-p p-large no-margin ">Brand Storytelling Matters</p>
                   </div>
                 </div>
               </div>
-              <div class="elementor-element elementor-element-52621eaa elementor-widget elementor-widget-pettextwrapper" data-id="52621eaa" data-element_type="widget" data-widget_type="pettextwrapper.default">
+              <div class="elementor-element elementor-element-52621eaa elementor-widget elementor-widget-petextwrapper" data-id="52621eaa" data-element_type="widget" data-widget_type="petextwrapper.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
                     <p class="text-p p-large  ">Communicating the brand's values and craftsmanship story was essential for connecting with discerning customers</p>
@@ -314,7 +314,7 @@
           </div>
           <div class="elementor-element elementor-element-5f62975 e-con-full convert--none e-flex bg--none no e-con e-child" data-id="5f62975" data-element_type="container">
             <div class="elementor-element elementor-element-6336b5ee e-con-full convert--none e-flex bg--none no e-con e-parent" data-id="6336b5ee" data-element_type="container">
-              <div class="elementor-element elementor-element-2f1d3eb2 elementor-widget elementor-widget-pettextwrapper" data-id="2f1d3eb2" data-element_type="widget" data-widget_type="pettextwrapper.default">
+              <div class="elementor-element elementor-element-2f1d3eb2 elementor-widget elementor-widget-petextwrapper" data-id="2f1d3eb2" data-element_type="widget" data-widget_type="petextwrapper.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
                     <p class="text-h5  no-margin ">"Pellini has redefined my wardrobe. The quality of their fabrics is exceptional, and their designs perfectly balance classic elegance with modern trends. It's luxury fashion that actually feels accessible and authentic."
@@ -322,7 +322,7 @@
                   </div>
                 </div>
               </div>
-              <div class="elementor-element elementor-element-18b9fbc6 elementor-widget elementor-widget-pettextwrapper" data-id="18b9fbc6" data-element_type="widget" data-widget_type="pettextwrapper.default">
+              <div class="elementor-element elementor-element-18b9fbc6 elementor-widget elementor-widget-petextwrapper" data-id="18b9fbc6" data-element_type="widget" data-widget_type="petextwrapper.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
                     <p class="text-p p-large  "> Marcus Rodriguez <br> Fashion Consultant </p>

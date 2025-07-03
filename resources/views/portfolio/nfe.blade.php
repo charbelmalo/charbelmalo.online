@@ -11,9 +11,9 @@
           <div class="elementor-element elementor-element-5e297e8 e-con-full convert--none e-flex bg--none no e-con e-child" data-id="5e297e8" data-element_type="container">
             <div class="elementor-element elementor-element-a1e8012 elementor-widget elementor-widget-projectmedia" data-id="a1e8012" data-element_type="widget" data-widget_type="projectmedia.default">
               <div class="elementor-widget-container">
-                <div class="project-featured-image p--featured featured__9348" style="background-color: #E1DAD1">
-                  <img loading="lazy" width="2000" height="1500" src="{{ asset('/assets/img/projects/savvy.jpg') }}" class="attachment-full size-full" style="
-      object-position: top;" decoding="async" srcset="{{ asset('/assets/img/projects/savvy.jpg') }} 2000w, {{ asset('/assets/img/projects/savvy.jpg') }} 300w, {{ asset('/assets/img/projects/savvy.jpg') }} 1024w, {{ asset('/assets/img/projects/savvy.jpg') }} 768w, {{ asset('/assets/img/projects/savvy.jpg') }} 1536w" sizes="(max-width: 2000px) 100vw, 2000px" />
+                <div class="project-featured-image p--featured featured__9340" style="background-color: #E1DAD1">
+                  <img loading="lazy" width="2000" height="1500" src="{{asset("/assets/img/projects/nfe.jpg")}}" class="attachment-full size-full" style="
+      object-position: top;" decoding="async" srcset="{{asset("/assets/img/projects/nfe.jpg")}} 2000w, {{asset("/assets/img/projects/nfe.jpg")}} 300w, {{asset("/assets/img/projects/nfe.jpg")}} 1024w, {{asset("/assets/img/projects/nfe.jpg")}} 768w, {{asset("/assets/img/projects/nfe.jpg")}} 1536w" sizes="(max-width: 2000px) 100vw, 2000px" />
                 </div>
               </div>
             </div>
@@ -23,10 +23,10 @@
               <div class="elementor-element elementor-element-6d893c3 elementor-widget elementor-widget-peprojectfield" data-id="6d893c3" data-element_type="widget" data-widget_type="peprojectfield.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
-                    <p class="text-h1 no-margin " data-animate="true" data-animation="charsUp" data-settings="{duration=1.5;delay=0;stagger=0.05;pin=;pinTarget=;scrub=;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}"> NFE </p>
+                    <p class="text-h1 no-margin " data-animate="true" data-animation="charsUp" data-settings="{duration=1.5;delay=0;stagger=0.05;pin=;pinTarget=;scrub=;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}"> NFE Business Solutions </p>
                     <div class="project--icon">
                       <span class="text-h6 no-margin " data-animate="true" data-animation="charsUp" data-settings="{duration=1.5;delay=0;stagger=0.05;pin=;pinTarget=;scrub=;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}">
-                        <i aria-hidden="true" class="material-icons-sharp md-arrow_outward" data-md-icon="arrow_outward"></i> NFE </span>
+                        <i aria-hidden="true" class="material-icons-sharp md-arrow_outward" data-md-icon="arrow_outward"></i> NFE Business Solutions </span>
                     </div>
                   </div>
                 </div>
@@ -36,21 +36,21 @@
               <div class="elementor-element elementor-element-93ffbdc elementor-widget elementor-widget-peprojectfield" data-id="93ffbdc" data-element_type="widget" data-widget_type="peprojectfield.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
-                    <p class="text-p   " data-animate="true" data-animation="wordsUp" data-settings="{duration=1;delay=0;stagger=0.01;pin=;pinTarget=;scrub=;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}">An innovative platform merging real estate with NFTs, providing a secure and transparent environment for buying, selling, and investing in properties digitally through blockchain technology.</p>
+                    <p class="text-p   " data-animate="true" data-animation="wordsUp" data-settings="{duration=1;delay=0;stagger=0.01;pin=;pinTarget=;scrub=;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}">A comprehensive digital business platform that streamlines operations, enhances productivity, and provides intelligent solutions for modern enterprises seeking technological advancement and operational excellence.</p>
                   </div>
                 </div>
               </div>
               <div class="elementor-element elementor-element-5553ba6 elementor-widget__width-auto elementor-widget elementor-widget-peprojectfield" data-id="5553ba6" data-element_type="widget" data-widget_type="peprojectfield.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
-                    <p class="text-p  no-margin " data-animate="true" data-animation="wordsUp" data-settings="{duration=1.5;delay=0;stagger=0.1;pin=;pinTarget=;scrub=;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}">Digital Investment Platform</p>
+                    <p class="text-p  no-margin " data-animate="true" data-animation="wordsUp" data-settings="{duration=1.5;delay=0;stagger=0.1;pin=;pinTarget=;scrub=;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}">Digital Business Platform</p>
                   </div>
                 </div>
               </div>
               <div class="elementor-element elementor-element-55f975f elementor-widget__width-auto elementor-widget elementor-widget-peprojectfield" data-id="55f975f" data-element_type="widget" data-widget_type="peprojectfield.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
-                    <p class="text-p  no-margin " data-animate="true" data-animation="wordsUp" data-settings="{duration=1.5;delay=0;stagger=0.1;pin=;pinTarget=;scrub=;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}"> 2022 </p>
+                    <p class="text-p  no-margin " data-animate="true" data-animation="wordsUp" data-settings="{duration=1.5;delay=0;stagger=0.1;pin=;pinTarget=;scrub=;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}"> 2023 </p>
                   </div>
                 </div>
               </div>
@@ -59,7 +59,7 @@
               <div class="elementor-element elementor-element-429e02e elementor-widget__width-auto elementor-widget elementor-widget-peprojectfield" data-id="429e02e" data-element_type="widget" data-widget_type="peprojectfield.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
-                    <p class="text-p  no-margin " data-animate="true" data-animation="charsUp" data-settings="{duration=1.5;delay=0;stagger=0.1;pin=;pinTarget=;scrub=;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}"> Blockchain Development </p>
+                    <p class="text-p  no-margin " data-animate="true" data-animation="charsUp" data-settings="{duration=1.5;delay=0;stagger=0.1;pin=;pinTarget=;scrub=;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}"> Enterprise Solutions </p>
                   </div>
                 </div>
               </div>
@@ -69,7 +69,7 @@
       </div>
     </div>
     <div id="content" class="page-content project-page-content">
-      <div data-elementor-type="wp-post" data-elementor-id="9348" class="elementor elementor-9348" data-elementor-post-type="portfolio">
+      <div data-elementor-type="wp-post" data-elementor-id="9340" class="elementor elementor-9340" data-elementor-post-type="portfolio">
         <div class="elementor-element elementor-element-543e933e e-con-full convert--none e-flex bg--none no e-con e-parent" data-id="543e933e" data-element_type="container">
           <div class="elementor-element elementor-element-158ed4bc elementor-widget elementor-widget-pesingleimage" data-id="158ed4bc" data-element_type="widget" data-widget_type="pesingleimage.default">
             <div class="elementor-widget-container">
@@ -94,14 +94,14 @@
               <div class="elementor-element elementor-element-7a62aeb4 elementor-widget elementor-widget-petextwrapper" data-id="7a62aeb4" data-element_type="widget" data-widget_type="petextwrapper.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
-                    <p class="text-h2  no-margin " data-animate="true" data-animation="wordsUp" data-settings="{duration=1.5;delay=0;stagger=0.04;pin=false;pinTarget=;scrub=false;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}">Revolutionizing real estate through blockchain</p>
+                    <p class="text-h2  no-margin " data-animate="true" data-animation="wordsUp" data-settings="{duration=1.5;delay=0;stagger=0.04;pin=false;pinTarget=;scrub=false;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}">Crafting unique solutions for NFE's digital transformation</p>
                   </div>
                 </div>
               </div>
               <div class="elementor-element elementor-element-57f52b11 elementor-widget elementor-widget-petextwrapper" data-id="57f52b11" data-element_type="widget" data-widget_type="petextwrapper.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
-                    <p class="text-p p-large  ">Blockchain Innovation</p>
+                    <p class="text-p p-large  ">Innovation in Business</p>
                   </div>
                 </div>
                 
@@ -110,7 +110,7 @@
                 <div class="elementor-element elementor-element-4c145c28 elementor-widget elementor-widget-petextwrapper" data-id="4c145c28" data-element_type="widget" data-widget_type="petextwrapper.default">
                   <div class="elementor-widget-container">
                     <div class="text-wrapper">
-                      <p class="text-p p-large  ">Pioneering research into blockchain applications enabled us to create a secure, transparent platform that transforms traditional real estate investment models.</p>
+                      <p class="text-p p-large  ">Comprehensive business analysis and enterprise requirements enabled us to develop scalable digital solutions that drive operational efficiency and support sustainable business growth across all departments.</p>
                     </div>
                   </div>
                 </div>
@@ -134,15 +134,15 @@
           <div class="elementor-element elementor-element-6a3670da e-con-full convert--none e-flex bg--none no e-con e-child" data-id="6a3670da" data-element_type="container">
             <div class="elementor-element elementor-element-2c700621 elementor-widget elementor-widget-pesingleimage" data-id="2c700621" data-element_type="widget" data-widget_type="pesingleimage.default">
               <div class="elementor-widget-container">
-                <div class="single-image single--image" data-anim-image="true" data-animation="scale"   data-cursor="true" data-cursor-type="text-md" data-cursor-text="Property Tokenization" data-cursor-icon data-animation-direction data-settings="{duration=1.5;delay=0;stagger=0.1;pin=false;pinTarget=;scrub=false;item_ref_start=top;window_ref_start=bottom;item_ref_end=bottom;window_ref_end=top;out=false;start_scale=0;end_scale=1;inner_scale=true;block_direction=;mask_start=}">
-                  <img decoding="async" src="{{asset('assets/projects/nfe/nfe_channel_details.jpg')}}"   alt="nfe_tokenization" loading="lazy" />
+                <div class="single-image single--image" data-anim-image="true" data-animation="scale"   data-cursor="true" data-cursor-type="text-md" data-cursor-text="AI-Optimized Analytics" data-cursor-icon data-animation-direction data-settings="{duration=1.5;delay=0;stagger=0.1;pin=false;pinTarget=;scrub=false;item_ref_start=top;window_ref_start=bottom;item_ref_end=bottom;window_ref_end=top;out=false;start_scale=0;end_scale=1;inner_scale=true;block_direction=;mask_start=}">
+                  <img decoding="async" src="{{asset('assets/projects/nfe/nfe_channel_details.jpg')}}"   alt="nfe_channel_details" loading="lazy" />
                 </div>
               </div>
             </div>
             <div class="elementor-element elementor-element-190930f elementor-widget elementor-widget-pesingleimage" data-id="190930f" data-element_type="widget" data-widget_type="pesingleimage.default">
               <div class="elementor-widget-container">
-                <div class="single-image parallax--image"  data-cursor="true" data-cursor-type="text-md" data-cursor-text="Smart Contracts" data-cursor-icon data-anim-image="true" data-animation="scale" data-animation-direction data-settings="{duration=1.5;delay=0;stagger=0.1;pin=false;pinTarget=;scrub=false;item_ref_start=top;window_ref_start=bottom;item_ref_end=bottom;window_ref_end=top;out=false;start_scale=0;end_scale=1;inner_scale=true;block_direction=;mask_start=}">
-                  <img decoding="async" src="{{asset('assets/projects/nfe/nfe_illustration_meta.jpg')}}" alt="nfe_contracts" loading="lazy" />
+                <div class="single-image parallax--image"  data-cursor="true" data-cursor-type="text-md" data-cursor-text="AI-Driven Targeting" data-cursor-icon data-anim-image="true" data-animation="scale" data-animation-direction data-settings="{duration=1.5;delay=0;stagger=0.1;pin=false;pinTarget=;scrub=false;item_ref_start=top;window_ref_start=bottom;item_ref_end=bottom;window_ref_end=top;out=false;start_scale=0;end_scale=1;inner_scale=true;block_direction=;mask_start=}">
+                  <img decoding="async" src="{{asset('assets/projects/nfe/nfe_illustration_meta.jpg')}}" alt="nfe_illustration_meta" loading="lazy" />
                 </div>
               </div>
             </div>
@@ -150,14 +150,14 @@
           <div class="elementor-element elementor-element-1040667a e-con-full convert--none e-flex bg--none no e-con e-child" data-id="1040667a" data-element_type="container">
             <div class="elementor-element elementor-element-1e9c7c4e elementor-widget elementor-widget-pesingleimage" data-id="1e9c7c4e" data-element_type="widget" data-widget_type="pesingleimage.default">
               <div class="elementor-widget-container">
-                <div class="single-image parallax--image"  data-cursor="true" data-cursor-type="text-md" data-cursor-text="Secure Transactions" data-cursor-icon data-anim-image="true" data-animation="scale" data-animation-direction data-settings="{duration=1.5;delay=0;stagger=0.1;pin=false;pinTarget=;scrub=false;item_ref_start=top;window_ref_start=bottom;item_ref_end=bottom;window_ref_end=top;out=false;start_scale=0;end_scale=1;inner_scale=true;block_direction=;mask_start=}">
-                  <img decoding="async" src="{{asset('assets/projects/nfe/nfe_illustration_security.jpg')}}" alt="nfe_security" loading="lazy" />
+                <div class="single-image parallax--image"  data-cursor="true" data-cursor-type="text-md" data-cursor-text="Fully Secure" data-cursor-icon data-anim-image="true" data-animation="scale" data-animation-direction data-settings="{duration=1.5;delay=0;stagger=0.1;pin=false;pinTarget=;scrub=false;item_ref_start=top;window_ref_start=bottom;item_ref_end=bottom;window_ref_end=top;out=false;start_scale=0;end_scale=1;inner_scale=true;block_direction=;mask_start=}">
+                  <img decoding="async" src="{{asset('assets/projects/nfe/nfe_illustration_security.jpg')}}" alt="nfe_illustration_security" loading="lazy" />
                 </div>
               </div>
             </div>
             <div class="elementor-element elementor-element-4d7b5dc9 elementor-widget elementor-widget-pesingleimage" data-id="4d7b5dc9" data-element_type="widget" data-widget_type="pesingleimage.default">
               <div class="elementor-widget-container">
-                <div class="single-image single--image" data-anim-image="true" data-animation="scale"   data-cursor="true" data-cursor-type="text-md" data-cursor-text="Investment Analytics" data-cursor-icon data-animation-direction data-settings="{duration=1.5;delay=0;stagger=0.1;pin=false;pinTarget=;scrub=false;item_ref_start=top;window_ref_start=bottom;item_ref_end=bottom;window_ref_end=top;out=false;start_scale=0;end_scale=1;inner_scale=true;block_direction=;mask_start=}">
+                <div class="single-image single--image" data-anim-image="true" data-animation="scale"   data-cursor="true" data-cursor-type="text-md" data-cursor-text="Smart Reports" data-cursor-icon data-animation-direction data-settings="{duration=1.5;delay=0;stagger=0.1;pin=false;pinTarget=;scrub=false;item_ref_start=top;window_ref_start=bottom;item_ref_end=bottom;window_ref_end=top;out=false;start_scale=0;end_scale=1;inner_scale=true;block_direction=;mask_start=}">
                   <img decoding="async" src="{{asset('assets/projects/nfe/nfe_analytics.jpg')}}" alt="nfe_analytics" loading="lazy" />
                 </div>
               </div>
@@ -179,21 +179,21 @@
               <div class="elementor-element elementor-element-258c6fdb elementor-widget elementor-widget-petextwrapper" data-id="258c6fdb" data-element_type="widget" data-widget_type="petextwrapper.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
-                    <p class="text-h3  no-margin " data-animate="true" data-animation="wordsUp" data-settings="{duration=1.5;delay=0;stagger=0.04;pin=false;pinTarget=;scrub=false;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}"> The Technology Breakthrough Behind <br>NFE's Revolutionary Platform </p>
+                    <p class="text-h3  no-margin " data-animate="true" data-animation="wordsUp" data-settings="{duration=1.5;delay=0;stagger=0.04;pin=false;pinTarget=;scrub=false;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}"> The Strategic Foundation Behind <br>NFE's Digital Success </p>
                   </div>
                 </div>
               </div>
               <div class="elementor-element elementor-element-5aac5bdc elementor-widget elementor-widget-petextwrapper" data-id="5aac5bdc" data-element_type="widget" data-widget_type="petextwrapper.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
-                    <p class="text-p p-large  " data-animate="true" data-animation="linesUp" data-settings="{duration=1.5;delay=0;stagger=0.1;pin=false;pinTarget=;scrub=false;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}">NFE represents a paradigm shift in real estate investment, leveraging blockchain technology to create unprecedented transparency and accessibility. Our platform transforms physical properties into digital assets, enabling fractional ownership and global investment opportunities. </p>
+                    <p class="text-p p-large  " data-animate="true" data-animation="linesUp" data-settings="{duration=1.5;delay=0;stagger=0.1;pin=false;pinTarget=;scrub=false;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}">NFE Business Solutions represents a comprehensive approach to modern enterprise management, combining cutting-edge technology with deep understanding of business processes. The platform's sophisticated interface and streamlined workflows are designed to deliver measurable results for organizations of all sizes. </p>
                   </div>
                 </div>
               </div>
               <div class="elementor-element elementor-element-349f62aa elementor-widget elementor-widget-petextwrapper" data-id="349f62aa" data-element_type="widget" data-widget_type="petextwrapper.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
-                    <p class="text-p p-large no-margin " data-animate="true" data-animation="linesUp" >The platform architecture prioritizes security and user experience, making complex blockchain interactions seamless while maintaining the highest standards of trust and transparency in every transaction.</p>
+                    <p class="text-p p-large no-margin " data-animate="true" data-animation="linesUp" >Our design philosophy centers on creating intuitive experiences that empower business professionals to execute complex operations with confidence and precision across all organizational levels.</p>
                   </div>
                 </div>
               </div>
@@ -204,7 +204,7 @@
           <div class="elementor-element elementor-element-7a028433 elementor-widget elementor-widget-pesingleimage" data-id="7a028433" data-element_type="widget" data-widget_type="pesingleimage.default">
             <div class="elementor-widget-container">
               <div class="single-image single--image" data-anim-image="true" data-animation="mask" data-animation-direction data-settings="{duration=1.5;delay=0;stagger=0.1;pin=false;pinTarget=;scrub=true;item_ref_start=top;window_ref_start=bottom;item_ref_end=bottom;window_ref_end=top;out=false;start_scale=;end_scale=;inner_scale=;block_direction=;mask_start=square;square_start=inset(0% 20% 20% 0% round 50px);square_end=inset(20% 0% 0% 20% round 50px)}">
-                <img decoding="async" src="{{ asset('/assets/img/projects/savvy.png') }}"  data-cursor="true" data-cursor-type="text-lg" data-cursor-text="Blockchain Innovation" data-cursor-icon alt="nfe_blockchain" loading="lazy" />
+                <img decoding="async" src="../../assets/img/projects/nfe-2.png"  data-cursor="true" data-cursor-type="text-lg" data-cursor-text="Enterprise Platform" data-cursor-icon alt="nfe_platform" loading="lazy" />
               </div>
             </div>
           </div>
@@ -222,24 +222,24 @@
             </div>
             <div class="elementor-element elementor-element-8b9be79 e-con-full convert--none e-flex bg--none no e-con e-child" data-id="8b9be79" data-element_type="container">
               <div class="text-wrapper">
-                <p class="text-p p-large no-margin ">Democratize Real Estate Investment:</p>
+                <p class="text-p p-large no-margin ">Streamline Operations:</p>
               </div> 
               <div class="elementor-element elementor-element-5277767b elementor-widget elementor-widget-petextwrapper" data-id="5277767b" data-element_type="widget" data-widget_type="petextwrapper.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
-                    <p class="text-p p-large no-margin " data-animate="true" data-animation="wordsUp" data-settings="{duration=1.5;delay=0;stagger=0.02;pin=false;pinTarget=;scrub=false;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}">Make property investment accessible to everyone through fractional ownership and blockchain technology.</p>
+                    <p class="text-p p-large no-margin " data-animate="true" data-animation="wordsUp" data-settings="{duration=1.5;delay=0;stagger=0.02;pin=false;pinTarget=;scrub=false;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}">Develop integrated systems that optimize workflow efficiency, reduce operational overhead, and enable teams to focus on strategic business objectives.</p>
                   </div>
                 </div>
               </div>
             </div>
             <div class="elementor-element elementor-element-2cab0724 e-con-full convert--none e-flex bg--none no e-con e-child" data-id="2cab0724" data-element_type="container">
               <div class="text-wrapper">
-                <p class="text-p p-large no-margin ">Ensure Complete Transparency:</p>
+                <p class="text-p p-large no-margin ">Drive Digital Growth:</p>
               </div>
               <div class="elementor-element elementor-element-42c9049f elementor-widget elementor-widget-petextwrapper" data-id="42c9049f" data-element_type="widget" data-widget_type="petextwrapper.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
-                    <p class="text-p p-large no-margin " data-animate="true" data-animation="wordsUp" data-settings="{duration=1.5;delay=0;stagger=0.02;pin=false;pinTarget=;scrub=false;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}">Provide immutable transaction records and ownership verification through blockchain technology.</p>
+                    <p class="text-p p-large no-margin " data-animate="true" data-animation="wordsUp" data-settings="{duration=1.5;delay=0;stagger=0.02;pin=false;pinTarget=;scrub=false;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}">Create scalable digital infrastructure that supports business expansion, enhances customer experiences, and provides competitive advantages in evolving markets.</p>
                   </div>
                 </div>
               </div>
@@ -250,7 +250,7 @@
           <div class="elementor-element elementor-element-158ed4bc elementor-widget elementor-widget-pesingleimage" data-id="158ed4bc" data-element_type="widget" data-widget_type="pesingleimage.default">
             <div class="elementor-widget-container">
               <div class="single-image parallax--image">
-                <img decoding="async" src="../../assets/projects/nfe/nfe2_parallax.jpg"   data-cursor="true" data-cursor-type="text-lg" data-cursor-text="BUILT FOR INVESTORS" data-cursor-icon alt="nfe_2_parallax" loading="lazy" />
+                <img decoding="async" src="../../assets/projects/nfe/nfe2_parallax.jpg"   data-cursor="true" data-cursor-type="text-lg" data-cursor-text="ENTERPRISE FOCUSED SOLUTIONS" data-cursor-icon alt="nfe2_parallax" loading="lazy" />
               </div>
             </div>
           </div>
@@ -270,14 +270,14 @@
               <div class="elementor-element elementor-element-2fdfca57 elementor-widget elementor-widget-petextwrapper" data-id="2fdfca57" data-element_type="widget" data-widget_type="petextwrapper.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
-                    <p class="text-p p-large no-margin ">User Education is Critical</p>
+                    <p class="text-p p-large no-margin ">Data-Driven Decision Making</p>
                   </div>
                 </div>
               </div>
               <div class="elementor-element elementor-element-52621eaa elementor-widget elementor-widget-petextwrapper" data-id="52621eaa" data-element_type="widget" data-widget_type="petextwrapper.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
-                    <p class="text-p p-large  ">Simplifying complex blockchain concepts for mainstream users was essential for platform adoption and success.</p>
+                    <p class="text-p p-large  ">Leveraging comprehensive analytics and business intelligence proved crucial for optimizing operational performance and maximizing ROI across all business functions.</p>
                   </div>
                 </div>
               </div>
@@ -287,14 +287,14 @@
               <div class="elementor-element elementor-element-2fdfca57 elementor-widget elementor-widget-petextwrapper" data-id="2fdfca57" data-element_type="widget" data-widget_type="petextwrapper.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
-                    <p class="text-p p-large no-margin ">Regulatory Compliance Matters</p>
+                    <p class="text-p p-large no-margin ">Scalable Architecture</p>
                   </div>
                 </div>
               </div>
               <div class="elementor-element elementor-element-52621eaa elementor-widget elementor-widget-petextwrapper" data-id="52621eaa" data-element_type="widget" data-widget_type="petextwrapper.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
-                    <p class="text-p p-large  ">Navigating legal frameworks while innovating required careful balance between disruption and compliance</p>
+                    <p class="text-p p-large  ">Building flexible systems that adapt to changing business needs while maintaining performance became essential for long-term success and growth sustainability.</p>
                   </div>
                 </div>
               </div>
@@ -306,7 +306,7 @@
           <div class="elementor-element elementor-element-3ad8ae7c e-con-full convert--none e-flex bg--none no e-con e-child" data-id="3ad8ae7c" data-element_type="container">
             <div class="elementor-element elementor-element-17a524e elementor-widget elementor-widget-pesingleimage" data-id="17a524e" data-element_type="widget" data-widget_type="pesingleimage.default">
               <div class="elementor-widget-container">
-                <div class="single-image single--image"  data-cursor="true" data-cursor-type="text-md" data-cursor-text="FOR INVESTORS" data-cursor-icon data-anim-image="true" data-animation="mask" data-animation-direction data-settings="{duration=1.5;delay=0;stagger=0.1;pin=false;pinTarget=;scrub=true;item_ref_start=top;window_ref_start=bottom;item_ref_end=bottom;window_ref_end=top;out=false;start_scale=;end_scale=;inner_scale=true;block_direction=;mask_start=square;square_start=inset(0% 0% 50% 0% round 50px);square_end=inset(50% 0% 0% 0% round 50px)}">
+                <div class="single-image single--image"  data-cursor="true" data-cursor-type="text-md" data-cursor-text="FOR EXPERTS" data-cursor-icon data-anim-image="true" data-animation="mask" data-animation-direction data-settings="{duration=1.5;delay=0;stagger=0.1;pin=false;pinTarget=;scrub=true;item_ref_start=top;window_ref_start=bottom;item_ref_end=bottom;window_ref_end=top;out=false;start_scale=;end_scale=;inner_scale=true;block_direction=;mask_start=square;square_start=inset(0% 0% 50% 0% round 50px);square_end=inset(50% 0% 0% 0% round 50px)}">
                   <img decoding="async" src="{{asset('assets/projects/nfe/nfe_personas.jpg')}}" style="object-fit: contain" alt="nfe_personas" loading="lazy" />
                 </div>
               </div>
@@ -317,7 +317,7 @@
               <div class="elementor-element elementor-element-2f1d3eb2 elementor-widget elementor-widget-petextwrapper" data-id="2f1d3eb2" data-element_type="widget" data-widget_type="petextwrapper.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
-                    <p class="text-h5  no-margin ">"NFE has completely revolutionized how I approach real estate investment. The transparency and accessibility of blockchain technology combined with their intuitive platform makes investing in properties effortless and secure."
+                    <p class="text-h5  no-margin ">"Working with the team on NFE's digital transformation has been exceptional. They understood our complex business requirements and delivered solutions that have significantly improved our operational efficiency. The platform has become integral to our daily operations."
                     </p>
                   </div>
                 </div>
@@ -325,7 +325,7 @@
               <div class="elementor-element elementor-element-18b9fbc6 elementor-widget elementor-widget-petextwrapper" data-id="18b9fbc6" data-element_type="widget" data-widget_type="petextwrapper.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
-                    <p class="text-p p-large  "> David Chen <br> Real Estate Investor </p>
+                    <p class="text-p p-large  "> David Chen <br> Operations Director </p>
                   </div>
                 </div>
               </div>
@@ -352,11 +352,11 @@
           
           <div class="elementor-element elementor-element-a4dfded e-con-full convert--none e-flex bg--none no e-con e-child" data-id="a4dfded" data-element_type="container">
             <div class="elementor-element elementor-element-804f5ba e-con-full bg--color convert--none e-flex curved_false no e-con e-child" data-id="804f5ba" data-element_type="container">
-              <div class="elementor-element elementor-element-9910e5f elementor-widget elementor-widget-projectmedia" data-id="9910e5f" data-element_type="widget" data-widget_type="projectmedia.default">
+              <div class="elementor-element elementor-element-9910e5f elementor-widget elementor-widget-projectmedia" data-id="9910e5f" data-elementor-id="9910e5f" data-element_type="widget" data-widget_type="projectmedia.default">
               <div class="elementor-widget-container">
                 <a data-cursor="true" data-cursor-type="icon" data-cursor-text data-cursor-icon="&lt;i aria-hidden=&quot;true&quot; class=&quot;material-icons-sharp md-arrow_forward&quot; data-md-icon=&quot;arrow_forward&quot;&gt;&lt;/i&gt;" data-id="10686" class="barba--trigger" href="/portfolio/vertical-software">
                 <div class="project-featured-image project__image__10686">
-                  <img src="{{ asset('assets/img/projects/FLTRD.jpg') }}" alt="Vertical Software Project">
+                  <img src="{{ asset('assets/img/projects/vertical-software.jpg') }}" alt="Project Image">
                 </div>
                 </a>
               </div>
@@ -371,7 +371,7 @@
               <div class="elementor-element elementor-element-04c7e25 elementor-widget__width-auto elementor-widget elementor-widget-peprojectfield" data-id="04c7e25" data-element_type="widget" data-widget_type="peprojectfield.default">
               <div class="elementor-widget-container">
                 <div class="text-wrapper">
-                <p class="text-p p-large no-margin "> Enterprise Software Solution </p>
+                <p class="text-p p-large no-margin "> Software Development Platform </p>
                 </div>
               </div>
               </div>

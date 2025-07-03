@@ -2,9 +2,9 @@
 @section('content') 
 
 
-<article class="elementor-161 page type-page status-publish hentry"><div class="entry-content>
+<article class="elementor-161 page type-page status-publish hentry"><div class="entry-content">
 
-<div class="project-page" style="max-width: 1800px; margin:auto" data-elementor-type="wp-page" data-elementor-id="161" class="elementor elementor-161" data-elementor-post-type="page">
+<div class="project-page" style="max-width:                    <p class="text-p p-large  " data-animate="true" data-animation="linesUp" data-settings="{duration=1.5;delay=0;stagger=0.1;pin=false;pinTarget=;scrub=false;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}">Pellini Coffee represents over a century of Italian coffee mastery, translating traditional roasting expertise into a premium digital experience. The e-commerce platform elegantly showcases their artisanal products while providing seamless purchasing journeys for coffee connoisseurs worldwide. </p>1800px; margin:auto" data-elementor-type="wp-page" data-elementor-id="161" class="elementor elementor-161" data-elementor-post-type="page">
     <div class="project-hero">
       <div data-elementor-type="project-hero" data-elementor-id="6855" class="elementor elementor-6855" data-elementor-post-type="elementor_library">
         <div class="elementor-element elementor-element-26b19ad e-con-full convert--none e-flex bg--none no e-con e-parent" data-id="26b19ad" data-element_type="container">
@@ -12,8 +12,8 @@
             <div class="elementor-element elementor-element-a1e8012 elementor-widget elementor-widget-projectmedia" data-id="a1e8012" data-element_type="widget" data-widget_type="projectmedia.default">
               <div class="elementor-widget-container">
                 <div class="project-featured-image p--featured featured__9340" style="background-color: #E1DAD1">
-                  <img loading="lazy" width="2000" height="1500" src="{{asset("/assets/img/projects/vertical-software.jpg")}}" class="attachment-full size-full" style="
-      object-position: top;" decoding="async" srcset="{{asset("/assets/img/projects/vertical-software.jpg")}} 2000w, {{asset("/assets/img/projects/vertical-software.jpg")}} 300w, {{asset("/assets/img/projects/vertical-software.jpg")}} 1024w, {{asset("/assets/img/projects/vertical-software.jpg")}} 768w, {{asset("/assets/img/projects/vertical-software.jpg")}} 1536w" sizes="(max-width: 2000px) 100vw, 2000px" />
+                  <img loading="lazy" width="2000" height="1500" src="{{asset("/assets/img/projects/pellini.jpg")}}" class="attachment-full size-full" style="
+      object-position: top;" decoding="async" srcset="{{asset("/assets/img/projects/pellini.jpg")}} 2000w, {{asset("/assets/img/projects/pellini.jpg")}} 300w, {{asset("/assets/img/projects/pellini.jpg")}} 1024w, {{asset("/assets/img/projects/pellini.jpg")}} 768w, {{asset("/assets/img/projects/pellini.jpg")}} 1536w" sizes="(max-width: 2000px) 100vw, 2000px" />
                 </div>
               </div>
             </div>
@@ -23,10 +23,10 @@
               <div class="elementor-element elementor-element-6d893c3 elementor-widget elementor-widget-peprojectfield" data-id="6d893c3" data-element_type="widget" data-widget_type="peprojectfield.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
-                    <p class="text-h1 no-margin " data-animate="true" data-animation="charsUp" data-settings="{duration=1.5;delay=0;stagger=0.05;pin=;pinTarget=;scrub=;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}"> Vertical Software </p>
+                    <p class="text-h1 no-margin " data-animate="true" data-animation="charsUp" data-settings="{duration=1.5;delay=0;stagger=0.05;pin=;pinTarget=;scrub=;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}"> Pellini Coffee </p>
                     <div class="project--icon">
                       <span class="text-h6 no-margin " data-animate="true" data-animation="charsUp" data-settings="{duration=1.5;delay=0;stagger=0.05;pin=;pinTarget=;scrub=;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}">
-                        <i aria-hidden="true" class="material-icons-sharp md-arrow_outward" data-md-icon="arrow_outward"></i> Vertical Software </span>
+                        <i aria-hidden="true" class="material-icons-sharp md-arrow_outward" data-md-icon="arrow_outward"></i> Pellini Coffee </span>
                     </div>
                   </div>
                 </div>
@@ -36,21 +36,21 @@
               <div class="elementor-element elementor-element-93ffbdc elementor-widget elementor-widget-peprojectfield" data-id="93ffbdc" data-element_type="widget" data-widget_type="peprojectfield.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
-                    <p class="text-p   " data-animate="true" data-animation="wordsUp" data-settings="{duration=1;delay=0;stagger=0.01;pin=;pinTarget=;scrub=;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}">A specialized software development platform that delivers custom solutions tailored to specific industry verticals, combining deep domain expertise with cutting-edge technology to solve complex business challenges.</p>
+                    <p class="text-p   " data-animate="true" data-animation="wordsUp" data-settings="{duration=1;delay=0;stagger=0.01;pin=;pinTarget=;scrub=;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}">A premium Italian coffee brand renowned for exceptional quality and artisanal craftsmanship, delivering authentic espresso experiences through elegant e-commerce solutions and sophisticated brand presentation.</p>
                   </div>
                 </div>
               </div>
               <div class="elementor-element elementor-element-5553ba6 elementor-widget__width-auto elementor-widget elementor-widget-peprojectfield" data-id="5553ba6" data-element_type="widget" data-widget_type="peprojectfield.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
-                    <p class="text-p  no-margin " data-animate="true" data-animation="wordsUp" data-settings="{duration=1.5;delay=0;stagger=0.1;pin=;pinTarget=;scrub=;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}">Software Development Platform</p>
+                    <p class="text-p  no-margin " data-animate="true" data-animation="wordsUp" data-settings="{duration=1.5;delay=0;stagger=0.1;pin=;pinTarget=;scrub=;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}">Premium Coffee Brand</p>
                   </div>
                 </div>
               </div>
               <div class="elementor-element elementor-element-55f975f elementor-widget__width-auto elementor-widget elementor-widget-peprojectfield" data-id="55f975f" data-element_type="widget" data-widget_type="peprojectfield.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
-                    <p class="text-p  no-margin " data-animate="true" data-animation="wordsUp" data-settings="{duration=1.5;delay=0;stagger=0.1;pin=;pinTarget=;scrub=;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}"> 2024 </p>
+                    <p class="text-p  no-margin " data-animate="true" data-animation="wordsUp" data-settings="{duration=1.5;delay=0;stagger=0.1;pin=;pinTarget=;scrub=;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}"> 2022 </p>
                   </div>
                 </div>
               </div>
@@ -59,7 +59,7 @@
               <div class="elementor-element elementor-element-429e02e elementor-widget__width-auto elementor-widget elementor-widget-peprojectfield" data-id="429e02e" data-element_type="widget" data-widget_type="peprojectfield.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
-                    <p class="text-p  no-margin " data-animate="true" data-animation="charsUp" data-settings="{duration=1.5;delay=0;stagger=0.1;pin=;pinTarget=;scrub=;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}"> Custom Development </p>
+                    <p class="text-p  no-margin " data-animate="true" data-animation="charsUp" data-settings="{duration=1.5;delay=0;stagger=0.1;pin=;pinTarget=;scrub=;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}"> Web Design </p>
                   </div>
                 </div>
               </div>
@@ -74,7 +74,7 @@
           <div class="elementor-element elementor-element-158ed4bc elementor-widget elementor-widget-pesingleimage" data-id="158ed4bc" data-element_type="widget" data-widget_type="pesingleimage.default">
             <div class="elementor-widget-container">
               <div class="single-image parallax--image">
-                <img decoding="async" src="../../assets/projects/vertical-software/vertical-software_parallax.jpg" title="vertical-software_parallax" alt="vertical-software_parallax" loading="lazy" />
+                <img decoding="async" src="../../assets/projects/pellini/pellini_parallax.jpg" title="pellini_parallax" alt="pellini_parallax" loading="lazy" />
               </div>
             </div>
           </div>
@@ -94,14 +94,14 @@
               <div class="elementor-element elementor-element-7a62aeb4 elementor-widget elementor-widget-petextwrapper" data-id="7a62aeb4" data-element_type="widget" data-widget_type="petextwrapper.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
-                    <p class="text-h2  no-margin " data-animate="true" data-animation="wordsUp" data-settings="{duration=1.5;delay=0;stagger=0.04;pin=false;pinTarget=;scrub=false;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}">Crafting unique solutions for Vertical Software's platform</p>
+                    <p class="text-h2  no-margin " data-animate="true" data-animation="wordsUp" data-settings="{duration=1.5;delay=0;stagger=0.04;pin=false;pinTarget=;scrub=false;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}">Crafting authentic Italian coffee experiences</p>
                   </div>
                 </div>
               </div>
               <div class="elementor-element elementor-element-57f52b11 elementor-widget elementor-widget-petextwrapper" data-id="57f52b11" data-element_type="widget" data-widget_type="petextwrapper.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
-                    <p class="text-p p-large  ">Expertise in Development</p>
+                    <p class="text-p p-large  ">Heritage & Innovation</p>
                   </div>
                 </div>
                 
@@ -110,7 +110,7 @@
                 <div class="elementor-element elementor-element-4c145c28 elementor-widget elementor-widget-petextwrapper" data-id="4c145c28" data-element_type="widget" data-widget_type="petextwrapper.default">
                   <div class="elementor-widget-container">
                     <div class="text-wrapper">
-                      <p class="text-p p-large  ">Deep technical analysis and industry specialization enabled us to develop robust software solutions that address specific vertical market needs while maintaining scalability and performance excellence.</p>
+                      <p class="text-p p-large  ">Blending traditional Italian coffee craftsmanship with modern e-commerce innovation to create immersive digital experiences that honor Pellini's century-old heritage while appealing to contemporary coffee enthusiasts.</p>
                     </div>
                   </div>
                 </div>
@@ -119,7 +119,7 @@
                     <div class="pe--button false pb--underlined false pb--icon icon__right pb--normal link">
                       <div class="pe--button--wrapper">
                         <a href="#comingsoon" rel="nofollow">
-                          <span class="pb__main">Learn more about Vertical Software <i aria-hidden="true" class="material-icons md-arrow_outward" data-md-icon="arrow_outward"></i>
+                          <span class="pb__main">Learn more about Pellini <i aria-hidden="true" class="material-icons md-arrow_outward" data-md-icon="arrow_outward"></i>
                           </span>
                         </a>
                       </div>
@@ -134,15 +134,15 @@
           <div class="elementor-element elementor-element-6a3670da e-con-full convert--none e-flex bg--none no e-con e-child" data-id="6a3670da" data-element_type="container">
             <div class="elementor-element elementor-element-2c700621 elementor-widget elementor-widget-pesingleimage" data-id="2c700621" data-element_type="widget" data-widget_type="pesingleimage.default">
               <div class="elementor-widget-container">
-                <div class="single-image single--image" data-anim-image="true" data-animation="scale"   data-cursor="true" data-cursor-type="text-md" data-cursor-text="AI-Optimized Analytics" data-cursor-icon data-animation-direction data-settings="{duration=1.5;delay=0;stagger=0.1;pin=false;pinTarget=;scrub=false;item_ref_start=top;window_ref_start=bottom;item_ref_end=bottom;window_ref_end=top;out=false;start_scale=0;end_scale=1;inner_scale=true;block_direction=;mask_start=}">
-                  <img decoding="async" src="{{asset('assets/projects/vertical-software/vertical-software_channel_details.jpg')}}"   alt="vertical-software_channel_details" loading="lazy" />
+                <div class="single-image single--image" data-anim-image="true" data-animation="scale"   data-cursor="true" data-cursor-type="text-md" data-cursor-text="Product Showcase" data-cursor-icon data-animation-direction data-settings="{duration=1.5;delay=0;stagger=0.1;pin=false;pinTarget=;scrub=false;item_ref_start=top;window_ref_start=bottom;item_ref_end=bottom;window_ref_end=top;out=false;start_scale=0;end_scale=1;inner_scale=true;block_direction=;mask_start=}">
+                  <img decoding="async" src="{{asset('assets/projects/pellini/pellini_channel_details.jpg')}}"   alt="pellini_channel_details" loading="lazy" />
                 </div>
               </div>
             </div>
             <div class="elementor-element elementor-element-190930f elementor-widget elementor-widget-pesingleimage" data-id="190930f" data-element_type="widget" data-widget_type="pesingleimage.default">
               <div class="elementor-widget-container">
-                <div class="single-image parallax--image"  data-cursor="true" data-cursor-type="text-md" data-cursor-text="AI-Driven Targeting" data-cursor-icon data-anim-image="true" data-animation="scale" data-animation-direction data-settings="{duration=1.5;delay=0;stagger=0.1;pin=false;pinTarget=;scrub=false;item_ref_start=top;window_ref_start=bottom;item_ref_end=bottom;window_ref_end=top;out=false;start_scale=0;end_scale=1;inner_scale=true;block_direction=;mask_start=}">
-                  <img decoding="async" src="{{asset('assets/projects/vertical-software/vertical-software_illustration_meta.jpg')}}" alt="vertical-software_illustration_meta" loading="lazy" />
+                <div class="single-image parallax--image"  data-cursor="true" data-cursor-type="text-md" data-cursor-text="Brand Heritage" data-cursor-icon data-anim-image="true" data-animation="scale" data-animation-direction data-settings="{duration=1.5;delay=0;stagger=0.1;pin=false;pinTarget=;scrub=false;item_ref_start=top;window_ref_start=bottom;item_ref_end=bottom;window_ref_end=top;out=false;start_scale=0;end_scale=1;inner_scale=true;block_direction=;mask_start=}">
+                  <img decoding="async" src="{{asset('assets/projects/pellini/pellini_illustration_meta.jpg')}}" alt="pellini_illustration_meta" loading="lazy" />
                 </div>
               </div>
             </div>
@@ -150,15 +150,15 @@
           <div class="elementor-element elementor-element-1040667a e-con-full convert--none e-flex bg--none no e-con e-child" data-id="1040667a" data-element_type="container">
             <div class="elementor-element elementor-element-1e9c7c4e elementor-widget elementor-widget-pesingleimage" data-id="1e9c7c4e" data-element_type="widget" data-widget_type="pesingleimage.default">
               <div class="elementor-widget-container">
-                <div class="single-image parallax--image"  data-cursor="true" data-cursor-type="text-md" data-cursor-text="Fully Secure" data-cursor-icon data-anim-image="true" data-animation="scale" data-animation-direction data-settings="{duration=1.5;delay=0;stagger=0.1;pin=false;pinTarget=;scrub=false;item_ref_start=top;window_ref_start=bottom;item_ref_end=bottom;window_ref_end=top;out=false;start_scale=0;end_scale=1;inner_scale=true;block_direction=;mask_start=}">
-                  <img decoding="async" src="{{asset('assets/projects/vertical-software/vertical-software_illustration_security.jpg')}}" alt="vertical-software_illustration_security" loading="lazy" />
+                <div class="single-image parallax--image"  data-cursor="true" data-cursor-type="text-md" data-cursor-text="Quality Assurance" data-cursor-icon data-anim-image="true" data-animation="scale" data-animation-direction data-settings="{duration=1.5;delay=0;stagger=0.1;pin=false;pinTarget=;scrub=false;item_ref_start=top;window_ref_start=bottom;item_ref_end=bottom;window_ref_end=top;out=false;start_scale=0;end_scale=1;inner_scale=true;block_direction=;mask_start=}">
+                  <img decoding="async" src="{{asset('assets/projects/pellini/pellini_illustration_security.jpg')}}" alt="pellini_illustration_security" loading="lazy" />
                 </div>
               </div>
             </div>
             <div class="elementor-element elementor-element-4d7b5dc9 elementor-widget elementor-widget-pesingleimage" data-id="4d7b5dc9" data-element_type="widget" data-widget_type="pesingleimage.default">
               <div class="elementor-widget-container">
-                <div class="single-image single--image" data-anim-image="true" data-animation="scale"   data-cursor="true" data-cursor-type="text-md" data-cursor-text="Smart Reports" data-cursor-icon data-animation-direction data-settings="{duration=1.5;delay=0;stagger=0.1;pin=false;pinTarget=;scrub=false;item_ref_start=top;window_ref_start=bottom;item_ref_end=bottom;window_ref_end=top;out=false;start_scale=0;end_scale=1;inner_scale=true;block_direction=;mask_start=}">
-                  <img decoding="async" src="{{asset('assets/projects/vertical-software/vertical-software_analytics.jpg')}}" alt="vertical-software_analytics" loading="lazy" />
+                <div class="single-image single--image" data-anim-image="true" data-animation="scale"   data-cursor="true" data-cursor-type="text-md" data-cursor-text="Sales Analytics" data-cursor-icon data-animation-direction data-settings="{duration=1.5;delay=0;stagger=0.1;pin=false;pinTarget=;scrub=false;item_ref_start=top;window_ref_start=bottom;item_ref_end=bottom;window_ref_end=top;out=false;start_scale=0;end_scale=1;inner_scale=true;block_direction=;mask_start=}">
+                  <img decoding="async" src="{{asset('assets/projects/pellini/pellini_analytics.jpg')}}" alt="pellini_analytics" loading="lazy" />
                 </div>
               </div>
             </div>
@@ -179,21 +179,21 @@
               <div class="elementor-element elementor-element-258c6fdb elementor-widget elementor-widget-petextwrapper" data-id="258c6fdb" data-element_type="widget" data-widget_type="petextwrapper.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
-                    <p class="text-h3  no-margin " data-animate="true" data-animation="wordsUp" data-settings="{duration=1.5;delay=0;stagger=0.04;pin=false;pinTarget=;scrub=false;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}"> The Strategic Foundation Behind <br>Vertical Software's Development Success </p>
+                    <p class="text-h3  no-margin " data-animate="true" data-animation="wordsUp" data-settings="{duration=1.5;delay=0;stagger=0.04;pin=false;pinTarget=;scrub=false;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}"> The Digital Transformation of <br>Italian Coffee Excellence </p>
                   </div>
                 </div>
               </div>
               <div class="elementor-element elementor-element-5aac5bdc elementor-widget elementor-widget-petextwrapper" data-id="5aac5bdc" data-element_type="widget" data-widget_type="petextwrapper.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
-                    <p class="text-p p-large  " data-animate="true" data-animation="linesUp" data-settings="{duration=1.5;delay=0;stagger=0.1;pin=false;pinTarget=;scrub=false;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}">Vertical Software represents a specialized approach to custom software development, focusing on industry-specific solutions that leverage deep domain knowledge. The platform's modular architecture and customizable frameworks are designed to deliver exceptional value for niche markets and complex business requirements. </p>
+                    <p class="text-p p-large  " data-animate="true" data-animation="linesUp" data-settings="{duration=1.5;delay=0;stagger=0.1;pin=false;pinTarget=;scrub=false;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}">At its core, Grower is the result of meticulous UX and product design, merging technical innovation with an understanding of user needs. The platform’s intuitive interfaces, seamless workflows, and actionable analytics are designed to help users navigate complex marketing tasks effortlessly. </p>
                   </div>
                 </div>
               </div>
               <div class="elementor-element elementor-element-349f62aa elementor-widget elementor-widget-petextwrapper" data-id="349f62aa" data-element_type="widget" data-widget_type="petextwrapper.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
-                    <p class="text-p p-large no-margin " data-animate="true" data-animation="linesUp" >Our development philosophy centers on creating specialized solutions that understand unique industry challenges while maintaining the flexibility to evolve with changing market demands.</p>
+                    <p class="text-p p-large no-margin " data-animate="true" data-animation="linesUp" >The design philosophy honors Pellini's heritage while embracing modern e-commerce standards, creating an immersive brand experience that educates customers about coffee culture and simplifies premium product discovery.</p>
                   </div>
                 </div>
               </div>
@@ -204,7 +204,7 @@
           <div class="elementor-element elementor-element-7a028433 elementor-widget elementor-widget-pesingleimage" data-id="7a028433" data-element_type="widget" data-widget_type="pesingleimage.default">
             <div class="elementor-widget-container">
               <div class="single-image single--image" data-anim-image="true" data-animation="mask" data-animation-direction data-settings="{duration=1.5;delay=0;stagger=0.1;pin=false;pinTarget=;scrub=true;item_ref_start=top;window_ref_start=bottom;item_ref_end=bottom;window_ref_end=top;out=false;start_scale=;end_scale=;inner_scale=;block_direction=;mask_start=square;square_start=inset(0% 20% 20% 0% round 50px);square_end=inset(20% 0% 0% 20% round 50px)}">
-                <img decoding="async" src="../../assets/projects/vertical-software/vertical-software2_parallax.jpg"   data-cursor="true" data-cursor-type="text-lg" data-cursor-text="BUILT FOR DEVELOPERS" data-cursor-icon alt="vertical-software2_parallax" loading="lazy" />
+                <img decoding="async" src="../../assets/img/projects/pellini-2.png"  data-cursor="true" data-cursor-type="text-lg" data-cursor-text="Premium E-commerce Platform" data-cursor-icon alt="pellini_platform" loading="lazy" />
               </div>
             </div>
           </div>
@@ -222,24 +222,24 @@
             </div>
             <div class="elementor-element elementor-element-8b9be79 e-con-full convert--none e-flex bg--none no e-con e-child" data-id="8b9be79" data-element_type="container">
               <div class="text-wrapper">
-                <p class="text-p p-large no-margin ">Optimize User Workflows:</p>
+                <p class="text-p p-large no-margin ">Enhance Brand Storytelling:</p>
               </div> 
               <div class="elementor-element elementor-element-5277767b elementor-widget elementor-widget-petextwrapper" data-id="5277767b" data-element_type="widget" data-widget_type="petextwrapper.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
-                    <p class="text-p p-large no-margin " data-animate="true" data-animation="wordsUp" data-settings="{duration=1.5;delay=0;stagger=0.02;pin=false;pinTarget=;scrub=false;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}">Develop intuitive, time-saving processes to help users complete tasks efficiently and focus on strategic goals.</p>
+                    <p class="text-p p-large no-margin " data-animate="true" data-animation="wordsUp" data-settings="{duration=1.5;delay=0;stagger=0.02;pin=false;pinTarget=;scrub=false;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}">Create compelling narratives that communicate Pellini's century-old tradition and artisanal expertise through immersive digital experiences.</p>
                   </div>
                 </div>
               </div>
             </div>
             <div class="elementor-element elementor-element-2cab0724 e-con-full convert--none e-flex bg--none no e-con e-child" data-id="2cab0724" data-element_type="container">
               <div class="text-wrapper">
-                <p class="text-p p-large no-margin ">Create Scalable Experiences:</p>
+                <p class="text-p p-large no-margin ">Optimize E-commerce Experience:</p>
               </div>
               <div class="elementor-element elementor-element-42c9049f elementor-widget elementor-widget-petextwrapper" data-id="42c9049f" data-element_type="widget" data-widget_type="petextwrapper.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
-                    <p class="text-p p-large no-margin " data-animate="true" data-animation="wordsUp" data-settings="{duration=1.5;delay=0;stagger=0.02;pin=false;pinTarget=;scrub=false;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}">Design adaptable systems that grow with user needs, accommodating everything from small teams to enterprise-level operations.</p>
+                    <p class="text-p p-large no-margin " data-animate="true" data-animation="wordsUp" data-settings="{duration=1.5;delay=0;stagger=0.02;pin=false;pinTarget=;scrub=false;markers=false;start=0;startpov=top bottom;end=0;endpov=bottom bottom;out=false;inserted=false}">Design intuitive purchasing flows that simplify product discovery and checkout processes while maintaining the premium brand aesthetic.</p>
                   </div>
                 </div>
               </div>
@@ -250,7 +250,7 @@
           <div class="elementor-element elementor-element-158ed4bc elementor-widget elementor-widget-pesingleimage" data-id="158ed4bc" data-element_type="widget" data-widget_type="pesingleimage.default">
             <div class="elementor-widget-container">
               <div class="single-image parallax--image">
-                <img decoding="async" src="../../assets/projects/vertical-software/vertical-software2_parallax.jpg"   data-cursor="true" data-cursor-type="text-lg" data-cursor-text="CREATED BY MARKETING EXPERTS" data-cursor-icon alt="uxunleashed_10_parallax" loading="lazy" />
+                <img decoding="async" src="../../assets/projects/grower/grower2_parallax.jpg"   data-cursor="true" data-cursor-type="text-lg" data-cursor-text="CREATED BY MARKETING EXPERTS" data-cursor-icon alt="uxunleashed_10_parallax" loading="lazy" />
               </div>
             </div>
           </div>
@@ -313,11 +313,11 @@
             </div>
           </div>
           <div class="elementor-element elementor-element-5f62975 e-con-full convert--none e-flex bg--none no e-con e-child" data-id="5f62975" data-element_type="container">
-            <div class="elementor-element elementor-element-6336b5ee e-con-full convert--none e-flex bg--none no e-con e-parent" data-id="6336b5ee" data-elementor_type="container">
+            <div class="elementor-element elementor-element-6336b5ee e-con-full convert--none e-flex bg--none no e-con e-parent" data-id="6336b5ee" data-element_type="container">
               <div class="elementor-element elementor-element-2f1d3eb2 elementor-widget elementor-widget-petextwrapper" data-id="2f1d3eb2" data-element_type="widget" data-widget_type="petextwrapper.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
-                    <p class="text-h5  no-margin ">"The team's expertise in vertical software development has been transformative for our business. They delivered a solution that perfectly fits our industry needs while providing the flexibility to grow with our company. Their technical depth is unmatched."
+                    <p class="text-h5  no-margin ">“As someone who values both design and functionality, I was blown away by Grower’s user experience. Every feature feels purposeful, and the platform intuitively guides you through complex tasks. It’s clear that the UX team went above and beyond to create something exceptional.”
                     </p>
                   </div>
                 </div>
@@ -325,7 +325,7 @@
               <div class="elementor-element elementor-element-18b9fbc6 elementor-widget elementor-widget-petextwrapper" data-id="18b9fbc6" data-element_type="widget" data-widget_type="petextwrapper.default">
                 <div class="elementor-widget-container">
                   <div class="text-wrapper">
-                    <p class="text-p p-large  "> Sarah Johnson <br> CTO </p>
+                    <p class="text-p p-large  "> John Haddad <br> Project Manager </p>
                   </div>
                 </div>
               </div>
@@ -354,9 +354,9 @@
             <div class="elementor-element elementor-element-804f5ba e-con-full bg--color convert--none e-flex curved_false no e-con e-child" data-id="804f5ba" data-element_type="container">
               <div class="elementor-element elementor-element-9910e5f elementor-widget elementor-widget-projectmedia" data-id="9910e5f" data-element_type="widget" data-widget_type="projectmedia.default">
               <div class="elementor-widget-container">
-                <a data-cursor="true" data-cursor-type="icon" data-cursor-text data-cursor-icon="&lt;i aria-hidden=&quot;true&quot; class=&quot;material-icons-sharp md-arrow_forward&quot; data-md-icon=&quot;arrow_forward&quot;&gt;&lt;/i&gt;" data-id="10686" class="barba--trigger" href="/portfolio/grower">
+                <a data-cursor="true" data-cursor-type="icon" data-cursor-text data-cursor-icon="&lt;i aria-hidden=&quot;true&quot; class=&quot;material-icons-sharp md-arrow_forward&quot; data-md-icon=&quot;arrow_forward&quot;&gt;&lt;/i&gt;" data-id="10686" class="barba--trigger" href="#comingsoon">
                 <div class="project-featured-image project__image__10686">
-                  <img src="{{ asset('assets/img/projects/grower.jpg') }}" alt="Project Image">
+                  <img src="{{ asset('assets/img/projects/linkmaster/logo-vis.jpg') }}" alt="Project Image">
                 </div>
                 </a>
               </div>
